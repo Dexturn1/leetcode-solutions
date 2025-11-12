@@ -15,14 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1 — Checkout repository with full history
+      # Step 1 — Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      # Step 2 — Set up Python 3.11.9
+      # Step 2 — Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -34,14 +34,44 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests matplotlib pillow
 
-      # Step 4 — Run sorter script (ignore errors if no LeetCode problems yet)
+      # Step 4 — Ensure structure and default files exist
+      - name: Ensure base structure
+        run: |
+          mkdir -p LeetCode/Easy LeetCode/Medium LeetCode/Hard
+          touch LeetCode/Easy/.gitkeep
+          touch LeetCode/Medium/.gitkeep
+          touch LeetCode/Hard/.gitkeep
+
+          if [ ! -f README.md ]; then
+            echo "# 🚀 LeetCode Solutions" > README.md
+            echo "" >> README.md
+            echo "![Build](https://github.com/Dexturn1/leetcode-solutions/actions/workflows/leetcode-fresh.yml/badge.svg)" >> README.md
+            echo "![Last Commit](https://img.shields.io/github/last-commit/Dexturn1/leetcode-solutions)" >> README.md
+            echo "![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)" >> README.md
+            echo "" >> README.md
+            echo "Welcome to my organized collection of LeetCode solutions." >> README.md
+            echo "" >> README.md
+            echo "## 📁 Folder Structure" >> README.md
+            echo "- 🟢 LeetCode/Easy" >> README.md
+            echo "- 🟡 LeetCode/Medium" >> README.md
+            echo "- 🔴 LeetCode/Hard" >> README.md
+            echo "" >> README.md
+            echo "Each folder contains problems grouped by difficulty." >> README.md
+          fi
+
+      # Step 5 — Clean up empty topic folders
+      - name: Clean up empty folders
+        run: |
+          echo "🧹 Cleaning up empty folders..."
+          find LeetCode -mindepth 1 -type d ! -path "LeetCode/Easy" ! -path "LeetCode/Medium" ! -path "LeetCode/Hard" -empty -exec rm -rf {} +
+          echo "✅ Cleanup complete."
+
+      # Step 6 — Run sorter script
       - name: Run sorter script
         run: |
-          set -e
-          echo "🔁 Running sort_by_topic.py..."
           python .github/scripts/sort_by_topic.py || echo "⚠️ Sort script completed with warnings but workflow continues."
 
-      # Step 5 — Generate LeetCode stats chart
+      # Step 7 — Generate difficulty chart
       - name: Generate LeetCode stats chart
         run: |
           python <<'PYCODE'
@@ -49,31 +79,27 @@ jobs:
           import matplotlib.pyplot as plt
 
           base = "LeetCode"
-          difficulty_colors = {"Easy": "#00C853", "Medium": "#FFD600", "Hard": "#D50000"}
-          difficulty_counts = {"Easy": 0, "Medium": 0, "Hard": 0}
+          colors = {"Easy": "#00C853", "Medium": "#FFD600", "Hard": "#D50000"}
+          counts = {"Easy": 0, "Medium": 0, "Hard": 0}
 
           for root, _, files in os.walk(base):
               for f in files:
                   if f.endswith((".java", ".py")):
                       if "Easy" in root:
-                          difficulty_counts["Easy"] += 1
+                          counts["Easy"] += 1
                       elif "Medium" in root:
-                          difficulty_counts["Medium"] += 1
+                          counts["Medium"] += 1
                       elif "Hard" in root:
-                          difficulty_counts["Hard"] += 1
+                          counts["Hard"] += 1
 
-          if sum(difficulty_counts.values()) == 0:
-              difficulty_counts = {"Easy": 1, "Medium": 1, "Hard": 1}
-
-          labels = list(difficulty_counts.keys())
-          sizes = list(difficulty_counts.values())
-          colors = [difficulty_colors[d] for d in labels]
+          if sum(counts.values()) == 0:
+              counts = {"Easy": 1, "Medium": 1, "Hard": 1}
 
           plt.figure(figsize=(6, 6))
           plt.pie(
-              sizes,
-              labels=[f"{l} ({v})" for l, v in zip(labels, sizes)],
-              colors=colors,
+              counts.values(),
+              labels=[f"{k} ({v})" for k, v in counts.items()],
+              colors=[colors[k] for k in counts],
               autopct="%1.1f%%",
               startangle=140,
               wedgeprops={"edgecolor": "white", "linewidth": 2},
@@ -83,7 +109,7 @@ jobs:
           plt.savefig("LeetCode/stats.png", bbox_inches="tight")
           PYCODE
 
-      # Step 6 — Auto-generate README with badges and chart
+      # Step 8 — Generate dynamic README
       - name: Regenerate README.md
         run: |
           total=$(find LeetCode -name '*.java' -o -name '*.py' | wc -l)
@@ -98,15 +124,23 @@ jobs:
           bar=$(printf '█%.0s' $(seq 1 $blocks))
           emptybar=$(printf '░%.0s' $(seq 1 $((10 - blocks))))
 
+          contributors=$(git shortlog -sn --all | awk '{$1=""; print $0}' | sort | uniq | sed 's/^ *//' | while read -r name; do
+            user=$(echo "$name" | sed 's/ /%20/g')
+            echo "<a href='https://github.com/$name'><img src='https://github.com/$name.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='$name'/></a>"
+          done)
+
           {
             echo "# 🚀 LeetCode Solutions"
+            echo ""
+            echo "![Build](https://github.com/Dexturn1/leetcode-solutions/actions/workflows/leetcode-fresh.yml/badge.svg)"
+            echo "![Last Commit](https://img.shields.io/github/last-commit/Dexturn1/leetcode-solutions)"
+            echo "![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)"
             echo ""
             echo "![Repo Size](https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?color=blue&label=Repo%20Size&style=flat-square)"
             echo "![Solved Problems](https://img.shields.io/badge/Solved-$total-blue?style=flat-square&logo=leetcode)"
             echo "![Easy](https://img.shields.io/badge/Easy-$easy-brightgreen?style=flat-square)"
             echo "![Medium](https://img.shields.io/badge/Medium-$medium-yellow?style=flat-square)"
             echo "![Hard](https://img.shields.io/badge/Hard-$hard-red?style=flat-square)"
-            echo "![Daily Streak](https://img.shields.io/badge/Daily%20Streak🔥-Active-orange?style=flat-square)"
             echo ""
             echo "![Difficulty Distribution](./LeetCode/stats.png)"
             echo ""
@@ -115,12 +149,11 @@ jobs:
             echo "🕓 Last Updated: **$last_updated**"
             echo ""
             echo "## 📊 Difficulty Breakdown"
-            echo ""
-            echo "| Difficulty | Count | Badge |"
-            echo "|-------------|--------|--------|"
-            echo "| 🟢 Easy | $easy | ![Easy](https://img.shields.io/badge/Easy-$easy-brightgreen?style=flat-square) |"
-            echo "| 🟡 Medium | $medium | ![Medium](https://img.shields.io/badge/Medium-$medium-yellow?style=flat-square) |"
-            echo "| 🔴 Hard | $hard | ![Hard](https://img.shields.io/badge/Hard-$hard-red?style=flat-square) |"
+            echo "| Difficulty | Count |"
+            echo "|-------------|--------|"
+            echo "| 🟢 Easy | $easy |"
+            echo "| 🟡 Medium | $medium |"
+            echo "| 🔴 Hard | $hard |"
             echo ""
             echo "## 🏆 Achievements"
             echo "- 🧠 **Most Solved Tag:** Arrays & Strings"
@@ -136,15 +169,18 @@ jobs:
               echo "| $topic | $count |"
             done
             echo ""
+            echo "## 🤝 Contributors"
+            echo "<div align='center'>$contributors</div>"
+            echo ""
             echo "---"
             echo "Generated automatically by GitHub Actions 🚀"
           } > README.md
 
-      # Step 7 — Commit and push changes
+      # Step 9 — Commit and push changes
       - name: Commit and push changes
         run: |
           git config user.name "LeetHub-Auto"
           git config user.email "actions@github.com"
-          git add README.md LeetCode/stats.png || true
+          git add README.md LeetCode/stats.png LeetCode/**/.gitkeep || true
           git commit -m "Auto-organized LeetCode problems and updated README" || echo "No changes to commit"
           git push
