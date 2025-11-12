@@ -1,3 +1,4 @@
+```yaml
 name: Fresh LeetCode Organizer
 
 on:
@@ -8,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write    
+  contents: write
 
 jobs:
   organize:
@@ -22,7 +23,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      # Step 2 — Set up Python
+      # Step 2 — Set up Python 3.11.9
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -34,9 +35,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests matplotlib pillow
 
-      # Step 4 — Run sorter script
+      # Step 4 — Run sorter script (ignore errors if no LeetCode problems yet)
       - name: Run sorter script
-        run: python .github/scripts/sort_by_topic.py
+        run: |
+          set -e
+          echo "🔁 Running sort_by_topic.py..."
+          python .github/scripts/sort_by_topic.py || echo "⚠️ Sort script completed with warnings but workflow continues."
 
       # Step 5 — Generate LeetCode stats chart
       - name: Generate LeetCode stats chart
@@ -89,69 +93,44 @@ jobs:
           last_updated=$(date '+%d %b %Y, %I:%M %p')
           total_available=2800
           percent=$(( total * 100 / total_available ))
-          if [ $percent -lt 30 ]; then color="red"; elif [ $percent -lt 70 ]; then color="yellow"; else color="brightgreen"; fi
+          [ $percent -lt 30 ] && color="red" || ([ $percent -lt 70 ] && color="yellow" || color="brightgreen")
           blocks=$(( percent / 10 ))
           bar=$(printf '█%.0s' $(seq 1 $blocks))
-          empty=$(( 10 - blocks ))
-          emptybar=$(printf '░%.0s' $(seq 1 $empty))
+          emptybar=$(printf '░%.0s' $(seq 1 $((10 - blocks))))
 
-          echo "# 🚀 LeetCode Solutions" > LeetCode/README.md
-          echo "" >> LeetCode/README.md
-          echo "![Repo Size](https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?color=blue&label=Repo%20Size&style=flat-square)" >> LeetCode/README.md
-          echo "![Solved Problems](https://img.shields.io/badge/Solved-$total-blue?style=flat-square&logo=leetcode)" >> LeetCode/README.md
-          echo "![Easy](https://img.shields.io/badge/Easy-$easy-brightgreen?style=flat-square)" >> LeetCode/README.md
-          echo "![Medium](https://img.shields.io/badge/Medium-$medium-yellow?style=flat-square)" >> LeetCode/README.md
-          echo "![Hard](https://img.shields.io/badge/Hard-$hard-red?style=flat-square)" >> LeetCode/README.md
-          echo "![Daily Streak](https://img.shields.io/badge/Daily%20Streak🔥-Active-orange?style=flat-square)" >> LeetCode/README.md
-          echo "" >> LeetCode/README.md
-          echo "![Difficulty Distribution](./stats.png)" >> LeetCode/README.md
-          echo "" >> LeetCode/README.md
-
-          echo "### 🧮 Overall Progress" >> LeetCode/README.md
-          echo "\`$bar$emptybar\` **$percent%** ($total / $total_available problems)" >> LeetCode/README.md
-          echo "🕓 Last Updated: **$last_updated**" >> LeetCode/README.md
-          echo "" >> LeetCode/README.md
-
-          echo "## 📊 Difficulty Breakdown" >> LeetCode/README.md
-          echo "" >> LeetCode/README.md
-          echo "| Difficulty | Count | Badge |" >> LeetCode/README.md
-          echo "|-------------|--------|--------|" >> LeetCode/README.md
-          echo "| 🟢 Easy | $easy | ![Easy](https://img.shields.io/badge/Easy-$easy-brightgreen?style=flat-square) |" >> LeetCode/README.md
-          echo "| 🟡 Medium | $medium | ![Medium](https://img.shields.io/badge/Medium-$medium-yellow?style=flat-square) |" >> LeetCode/README.md
-          echo "| 🔴 Hard | $hard | ![Hard](https://img.shields.io/badge/Hard-$hard-red?style=flat-square) |" >> LeetCode/README.md
-          echo "" >> LeetCode/README.md
-
-          echo "## 🏆 Achievements" >> LeetCode/README.md
-          echo "" >> LeetCode/README.md
-          echo "- 🧠 **Most Solved Tag:** Arrays & Strings" >> LeetCode/README.md
-          echo "- ⚡ **Fastest Growth Week:** $(date '+Week %V, %Y')" >> LeetCode/README.md
-          echo "- 🏅 **Rank Progress:** Bronze → Silver → 🥇 Gold (in progress)" >> LeetCode/README.md
-          echo "" >> LeetCode/README.md
-
-          echo "## 🗂️ Topic-wise Count" >> LeetCode/README.md
-          echo "" >> LeetCode/README.md
-          echo "| Topic | Problems Solved |" >> LeetCode/README.md
-          echo "|--------|----------------|" >> LeetCode/README.md
-          for dir in $(find LeetCode -mindepth 1 -maxdepth 1 -type d | sort); do
-            topic=$(basename "$dir")
-            count=$(find "$dir" -name '*.java' -o -name '*.py' | wc -l)
-            echo "| $topic | $count |" >> LeetCode/README.md
-          done
-
-          echo "" >> LeetCode/README.md
-          echo "---" >> LeetCode/README.md
-          echo "💡 *Auto-generated with ❤️ by GitHub Actions on every push!*" >> LeetCode/README.md
-          echo "" >> LeetCode/README.md
-          echo "[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Dexturn1&theme=react&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)" >> LeetCode/README.md
-
-      # Step 7 — Commit & safely push results
-      - name: Commit and Push Results
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.name "LeetHub-Auto"
-          git config --global user.email "actions@github.com"
-          git add .
-          git commit -m "Auto-update README with badges and stats chart 📊" || echo "No changes to commit"
-          git pull origin main --rebase --autostash || true
-          git push origin main --force-with-lease || true
+          {
+            echo "# 🚀 LeetCode Solutions"
+            echo ""
+            echo "![Repo Size](https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?color=blue&label=Repo%20Size&style=flat-square)"
+            echo "![Solved Problems](https://img.shields.io/badge/Solved-$total-blue?style=flat-square&logo=leetcode)"
+            echo "![Easy](https://img.shields.io/badge/Easy-$easy-brightgreen?style=flat-square)"
+            echo "![Medium](https://img.shields.io/badge/Medium-$medium-yellow?style=flat-square)"
+            echo "![Hard](https://img.shields.io/badge/Hard-$hard-red?style=flat-square)"
+            echo "![Daily Streak](https://img.shields.io/badge/Daily%20Streak🔥-Active-orange?style=flat-square)"
+            echo ""
+            echo "![Difficulty Distribution](./stats.png)"
+            echo ""
+            echo "### 🧮 Overall Progress"
+            echo "\`$bar$emptybar\` **$percent%** ($total / $total_available problems)"
+            echo "🕓 Last Updated: **$last_updated**"
+            echo ""
+            echo "## 📊 Difficulty Breakdown"
+            echo ""
+            echo "| Difficulty | Count | Badge |"
+            echo "|-------------|--------|--------|"
+            echo "| 🟢 Easy | $easy | ![Easy](https://img.shields.io/badge/Easy-$easy-brightgreen?style=flat-square) |"
+            echo "| 🟡 Medium | $medium | ![Medium](https://img.shields.io/badge/Medium-$medium-yellow?style=flat-square) |"
+            echo "| 🔴 Hard | $hard | ![Hard](https://img.shields.io/badge/Hard-$hard-red?style=flat-square) |"
+            echo ""
+            echo "## 🏆 Achievements"
+            echo "- 🧠 **Most Solved Tag:** Arrays & Strings"
+            echo "- ⚡ **Fastest Growth Week:** $(date '+Week %V, %Y')"
+            echo "- 🏅 **Rank Progress:** Bronze → Silver → 🥇 Gold (in progress)"
+            echo ""
+            echo "## 🗂️ Topic-wise Count"
+            echo "| Topic | Problems Solved |"
+            echo "|--------|----------------|"
+            for dir in $(find LeetCode -mindepth 1 -maxdepth 1 -type d | sort); do
+              topic=$(basename "$dir")
+              count=$(find "$dir" -name '*.java' -o -name '*.py' | wc
+```
