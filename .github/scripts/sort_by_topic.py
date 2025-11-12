@@ -1,3 +1,4 @@
+```python
 import os, shutil, requests, re
 from datetime import datetime
 
@@ -58,6 +59,7 @@ def add_to_topic_readme(topic, title, qid, slug, diff):
 
 stats = {"Easy": 0, "Medium": 0, "Hard": 0}
 topics_count = {}
+unique_slugs = set()  # ✅ track unique problems only
 
 for diff in ["Easy", "Medium", "Hard"]:
     diff_path = os.path.join(BASE_DIR, diff)
@@ -66,7 +68,8 @@ for diff in ["Easy", "Medium", "Hard"]:
 
     for folder in os.listdir(diff_path):
         slug = get_slug(folder)
-        if not slug: continue
+        if not slug:
+            continue
 
         title, difficulty, qid, tags = get_problem_data(slug)
         src = os.path.join(diff_path, folder)
@@ -78,7 +81,10 @@ for diff in ["Easy", "Medium", "Hard"]:
             add_to_topic_readme(tag, title, qid, slug, difficulty)
             topics_count[tag] = topics_count.get(tag, 0) + 1
 
-        stats[difficulty] = stats.get(difficulty, 0) + 1
+        # ✅ count each problem only once per difficulty
+        if slug not in unique_slugs:
+            unique_slugs.add(slug)
+            stats[difficulty] = stats.get(difficulty, 0) + 1
 
 # Clean up default LeetHub folders
 for d in ["Easy", "Medium", "Hard"]:
@@ -104,6 +110,7 @@ with open(master, "w") as f:
     f.write(f"- 🟢 Easy: {stats['Easy']}\n")
     f.write(f"- 🟠 Medium: {stats['Medium']}\n")
     f.write(f"- 🔴 Hard: {stats['Hard']}\n\n")
+
     f.write("## 📂 Topics\n")
     f.write("| Topic | Problems | Link |\n|--------|-----------|------|\n")
     for topic, count in sorted(topics_count.items()):
@@ -134,4 +141,4 @@ if os.path.exists(PROFILE_REPO):
         print("✅ Profile README badges updated.")
     else:
         print("⚠️ Profile README not found, skipping badge sync.")
-
+```
