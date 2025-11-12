@@ -1,4 +1,3 @@
-```python
 import os, shutil, requests, re
 from datetime import datetime
 
@@ -141,4 +140,3 @@ if os.path.exists(PROFILE_REPO):
         print("✅ Profile README badges updated.")
     else:
         print("⚠️ Profile README not found, skipping badge sync.")
-```
