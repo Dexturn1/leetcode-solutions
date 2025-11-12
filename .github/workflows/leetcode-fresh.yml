@@ -3,6 +3,8 @@ name: Fresh LeetCode Organizer
 on:
   push:
     branches: [ main ]
+  schedule:
+    - cron: "0 0 * * *"  # runs daily at midnight UTC
   workflow_dispatch:
 
 permissions:
@@ -39,6 +41,7 @@ jobs:
       # Step 5 — Generate LeetCode stats chart
       - name: Generate LeetCode stats chart
         run: |
+          python <<'PYCODE'
           import os
           import matplotlib.pyplot as plt
 
@@ -63,7 +66,7 @@ jobs:
           sizes = list(difficulty_counts.values())
           colors = [difficulty_colors[d] for d in labels]
 
-          plt.figure(figsize=(6,6))
+          plt.figure(figsize=(6, 6))
           plt.pie(
               sizes,
               labels=[f"{l} ({v})" for l, v in zip(labels, sizes)],
@@ -74,8 +77,9 @@ jobs:
           )
           plt.title("LeetCode Difficulty Distribution", fontsize=14, fontweight="bold")
           plt.savefig("LeetCode/stats.png", bbox_inches="tight")
+          PYCODE
 
-      # Step 6 — Auto-generate README with badges and chart at the top
+      # Step 6 — Auto-generate README with badges and chart
       - name: Regenerate README.md
         run: |
           total=$(find LeetCode -name '*.java' -o -name '*.py' | wc -l)
