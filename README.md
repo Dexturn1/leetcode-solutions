@@ -1,32 +1,70 @@
-# 🚀 LeetCode Solutions
+<h1 align="center">🚀 LeetCode Solutions by <a href="https://github.com/Dexturn1">Dexturn1</a></h1>
 
-![Build](https://github.com/Dexturn1/leetcode-solutions/actions/workflows/leetcode-fresh.yml/badge.svg)
-![Contributors](https://img.shields.io/github/contributors/Dexturn1/leetcode-solutions?color=purple)
-![Stars](https://img.shields.io/github/stars/Dexturn1/leetcode-solutions?style=flat-square)
-![Forks](https://img.shields.io/github/forks/Dexturn1/leetcode-solutions?style=flat-square)
-![Repo Size](https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?color=blue)
-
-![Difficulty Distribution](./LeetCode/stats.png)
-![Language Usage](./LeetCode/langs.png)
-![Progress Over Time](./LeetCode/progress.png)
-
-### 🧮 Progress
-`█░░░░░░░░░░` **0%** (18 / 2800 problems)
-🕓 Last Updated: **12 Nov 2025, 05:12 PM**
-
-### 🧠 Language Split
-🐍 Python: 0% ☕ Java: 94%
-
-## 🧘 Quote of the Run
-> 💡 Before software can be reusable it first has to be usable.
-
-## 🤝 Contributors
-<div align='center'><a href='https://github.com/Prabhat%20Kapkoti'><img src='https://github.com/Prabhat%20Kapkoti.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='Prabhat Kapkoti'/></a>
-<a href='https://github.com/LeetHub-Auto'><img src='https://github.com/LeetHub-Auto.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='LeetHub-Auto'/></a>
-<a href='https://github.com/Dexturn1'><img src='https://github.com/Dexturn1.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='Dexturn1'/></a></div>
-
-### 🥇 Top Contributor
-<div align='center'><a href='https://github.com/Prabhat%20Kapkoti'><img src='https://github.com/Prabhat%20Kapkoti.png' width='65' height='65' style='border-radius:50%;box-shadow:0 0 20px #FFD700,0 0 40px #FFA500;animation:pulse 2s infinite' alt='Prabhat Kapkoti'/></a> **Prabhat Kapkoti 🥇**</div>
+<p align="center">
+  <a href="https://github.com/Dexturn1/leetcode-solutions/actions/workflows/leetcode-fresh.yml">
+    <img src="https://github.com/Dexturn1/leetcode-solutions/actions/workflows/leetcode-fresh.yml/badge.svg" alt="Workflow Status" />
+  </a>
+  <img src="https://img.shields.io/github/stars/Dexturn1/leetcode-solutions?style=flat-square&color=gold" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/Dexturn1/leetcode-solutions?style=flat-square&color=orange" alt="Forks"/>
+  <img src="https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?style=flat-square&color=blue" alt="Repo Size"/>
+</p>
 
 ---
-Generated automatically by GitHub Actions 🚀
+
+### 📊 Quick Stats
+| Metric | Value |
+|--------|--------|
+| 🧮 Problems Solved | **18 / 2800 (0%)** |
+| ⏰ Last Updated | **12 Nov 2025, 05:12 PM** |
+| ☕ Language Split | **Java – 94%**, Python – 0% |
+
+---
+
+### 💡 Quote of the Run
+> *“Before software can be reusable, it first has to be usable.”*  
+> — Ralph Johnson
+
+---
+
+### 🧩 Visual Progress
+<p align="center">
+  <img src="https://github.com/Dexturn1/leetcode-solutions/blob/main/LeetCode/stats.png" width="31%" alt="Difficulty Stats"/>
+  <img src="https://github.com/Dexturn1/leetcode-solutions/blob/main/LeetCode/langs.png" width="31%" alt="Languages"/>
+  <img src="https://github.com/Dexturn1/leetcode-solutions/blob/main/LeetCode/progress.png" width="31%" alt="Progress"/>
+</p>
+
+---
+
+### 🧠 About This Repository
+This repo is **automatically updated** via GitHub Actions every time a new LeetCode solution is added or modified.  
+It keeps track of:
+- ✅ Solved problems with metadata (time/space)
+- 📈 Performance charts and language stats
+- 🪄 Auto-generated README & badges
+
+---
+
+### 🥇 Contributors
+<p align="center">
+  <a href="https://github.com/Dexturn1"><img src="https://avatars.githubusercontent.com/u/104815270?v=4" width="80" style="border-radius:50%" /></a>
+  <a href="https://github.com/LeetHub-Auto"><img src="https://avatars.githubusercontent.com/u/65916846?v=4" width="80" style="border-radius:50%" /></a>
+  <a href="https://github.com/actions-user"><img src="https://avatars.githubusercontent.com/u/65916846?v=4" width="80" style="border-radius:50%" /></a>
+</p>
+
+<p align="center">
+  🥇 <strong>Top Contributor:</strong> <a href="https://github.com/Dexturn1">Prabhat Kapkoti</a>
+</p>
+
+---
+
+### ⚙️ Automation Stack
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=githubactions,python,java,markdown&theme=dark" />
+</p>
+
+---
+
+<p align="center">
+  <i>Generated automatically by <b>LeetCode Organizer Premium ✨</b></i><br/>
+  <sub>💻 Made with ❤️ by <a href="https://github.com/Dexturn1">Dexturn1</a></sub>
+</p>
