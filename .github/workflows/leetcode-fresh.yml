@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write    
+
 jobs:
   organize:
     runs-on: ubuntu-latest
@@ -16,34 +17,43 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}   
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0   # Fetch full history to allow pull/rebase
+
       # Step 2 — Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11.9"             
-      # Step 3 — Confirm Python version
+          python-version: "3.11.9"
+
+      # Step 3 — Verify Python installation
       - name: Verify Python
         run: python --version
 
-      # Step 4 — Install Python dependencies
+      # Step 4 — Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
 
-      # Step 5 — Run the sorting script
+      # Step 5 — Run your sorting script
       - name: Run sorter script
         run: python .github/scripts/sort_by_topic.py
 
-      # Step 6 — Commit and push changes using GitHub token
-      - name: Commit results
+      # Step 6 — Commit and push results safely
+      - name: Commit and push results
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "LeetHub-Auto"
           git config user.email "actions@github.com"
+
           git add .
           git commit -m "Auto-organized LeetCode problems" || echo "No changes to commit"
-          git push origin main
 
+          # ✅ Make sure your local branch is up-to-date before pushing
+          git fetch origin main
+          git rebase origin/main || git pull origin main --rebase
+
+          # ✅ Push changes after sync
+          git push origin main
