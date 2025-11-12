@@ -19,3 +19,87 @@ Every time I solve a problem on [LeetCode](https://leetcode.com/), this repo aut
 
 ## 📂 Repository Structure
 Each problem is placed inside one or more topic folders like:
+LeetCode/
+├── Array/
+│ └── Medium/
+│ └── 0090-subsets-ii/
+│ ├── 0090-subsets-ii.java
+│ └── README.md
+├── Backtracking/
+│ └── Medium/
+│ └── 0090-subsets-ii/
+│ ├── 0090-subsets-ii.java
+│ └── README.md
+└── Bit_Manipulation/
+└── Medium/
+└── 0090-subsets-ii/
+├── 0090-subsets-ii.java
+└── README.md
+
+
+> Problems that belong to multiple topics (like Array + DP) appear in **both folders** automatically.
+
+---
+
+## 🧩 Topics Covered
+- 🧮 Array  
+- 🔁 Linked List  
+- 🌲 Tree  
+- 🧭 Graph  
+- 💡 Dynamic Programming  
+- 🪟 Sliding Window  
+- 🔢 Bit Manipulation  
+- ⚙️ Backtracking  
+- 🧠 Stack / Queue  
+- 📊 HashMap / Set  
+- 🧱 Two Pointers  
+- 💬 Strings  
+
+---
+
+## ⚙️ Automation
+This repository uses a **GitHub Action workflow** to:
+- Detect new problems solved via [LeetHub](https://chrome.google.com/webstore/detail/leethub-v3/lejdbmnjhcabncgajlfobnnhplnibjcb)
+- Run a Python sorter script (`sort_by_topic.py`)
+- Commit & push the organized files automatically  
+
+Action File:  
+[`/.github/workflows/leetcode-fresh.yml`](https://github.com/Dexturn1/leetcode-solutions/blob/main/.github/workflows/leetcode-fresh.yml)
+
+---
+
+## 🚀 How It Works
+1. Solve any problem on **LeetCode** with the **LeetHub extension**  
+2. LeetHub pushes the solution to this repo automatically  
+3. GitHub Action runs and organizes the solution by topic  
+4. Folder structure updates itself neatly 🧹  
+
+---
+
+## 🧑‍💻 Tech Stack
+- **Java** – primary language for all solutions  
+- **Python (Automation)** – for sorting and structuring files  
+- **GitHub Actions** – for continuous integration  
+
+---
+
+## 📈 Progress
+| Difficulty | Count |
+|-------------|-------|
+| 🟢 Easy | Coming soon |
+| 🟠 Medium | Coming soon |
+| 🔴 Hard | Coming soon |
+
+*(Auto update feature coming next — stay tuned!)*
+
+---
+
+## 📫 Connect With Me
+**GitHub:** [Dexturn1](https://github.com/Dexturn1)  
+**LeetCode:** [prabhatkapkoti](https://leetcode.com/)  
+**LinkedIn:** [Prabhat Kapkoti](https://www.linkedin.com/in/prabhatkapkoti/)  
+
+---
+
+⭐ If you find this automation useful, consider giving it a **Star** on GitHub!
+
