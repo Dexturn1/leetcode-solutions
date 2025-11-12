@@ -1,79 +1,32 @@
 # 🚀 LeetCode Solutions
 
-[![Build](https://github.com/Dexturn1/leetcode-solutions/actions/workflows/leetcode-fresh.yml/badge.svg)](https://github.com/Dexturn1/leetcode-solutions/actions)
+![Build](https://github.com/Dexturn1/leetcode-solutions/actions/workflows/leetcode-fresh.yml/badge.svg)
 ![Contributors](https://img.shields.io/github/contributors/Dexturn1/leetcode-solutions?color=purple)
 ![Stars](https://img.shields.io/github/stars/Dexturn1/leetcode-solutions?style=flat-square)
 ![Forks](https://img.shields.io/github/forks/Dexturn1/leetcode-solutions?style=flat-square)
 ![Repo Size](https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?color=blue)
 
----
-
-## 📊 Problem Stats
-
-| Difficulty | Count | Progress |
-|-------------|--------|-----------|
-| 🟢 Easy     | 0      | ░░░░░░░░░░ 0% |
-| 🟡 Medium   | 0      | ░░░░░░░░░░ 0% |
-| 🔴 Hard     | 0      | ░░░░░░░░░░ 0% |
-| **Total**   | 0      | ░░░░░░░░░░ 0% |
-
-🕓 **Last Updated:** _Not yet generated_  
-🎯 **Auto-updated daily or on every push.**
-
----
-
-## 🧠 Languages Used
-
-🐍 Python: 0%  ☕ Java: 0%
-
----
-
-## 🧮 Charts (auto-generated)
-
-Once your workflow runs, it’ll generate:
-- 🥧 Difficulty Distribution (`LeetCode/stats.png`)
-- 📊 Language Usage (`LeetCode/langs.png`)
-- 📈 Progress Over Time (`LeetCode/progress.png`)
-
-Example (coming soon 👇):
-
 ![Difficulty Distribution](./LeetCode/stats.png)
 ![Language Usage](./LeetCode/langs.png)
 ![Progress Over Time](./LeetCode/progress.png)
 
----
+### 🧮 Progress
+`█░░░░░░░░░░` **0%** (17 / 2800 problems)
+🕓 Last Updated: **12 Nov 2025, 05:07 PM**
+
+### 🧠 Language Split
+🐍 Python: 0% ☕ Java: 94%
 
 ## 🧘 Quote of the Run
-
-> 💡 _"Talk is cheap. Show me the code."_ — Linus Torvalds
-
----
+> 💡 Talk is cheap. Show me the code.
 
 ## 🤝 Contributors
-
-<div align="center">
-No contributors yet 😅<br>
-(Will auto-populate after first commit)
-</div>
-
----
+<div align='center'><a href='https://github.com/Prabhat%20Kapkoti'><img src='https://github.com/Prabhat%20Kapkoti.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='Prabhat Kapkoti'/></a>
+<a href='https://github.com/LeetHub-Auto'><img src='https://github.com/LeetHub-Auto.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='LeetHub-Auto'/></a>
+<a href='https://github.com/Dexturn1'><img src='https://github.com/Dexturn1.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='Dexturn1'/></a></div>
 
 ### 🥇 Top Contributor
-
-<div align="center">
-✨ _Coming soon after your first push!_ ✨
-</div>
+<div align='center'><a href='https://github.com/Prabhat%20Kapkoti'><img src='https://github.com/Prabhat%20Kapkoti.png' width='65' height='65' style='border-radius:50%;box-shadow:0 0 20px #FFD700,0 0 40px #FFA500;animation:pulse 2s infinite' alt='Prabhat Kapkoti'/></a> **Prabhat Kapkoti 🥇**</div>
 
 ---
-
-### 🧩 About
-
-This repository automatically:
-- Organizes LeetCode problems by difficulty (Easy / Medium / Hard)
-- Generates charts and progress logs
-- Updates this README automatically using **GitHub Actions**
-
----
-
-**Made with 💻 + ☕ by [Dexturn1](https://github.com/Dexturn1)**  
-🚀 _Updated automatically by [LeetCode Organizer Premium Workflow](.github/workflows/leetcode-fresh.yml)_
+Generated automatically by GitHub Actions 🚀
