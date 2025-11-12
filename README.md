@@ -11,14 +11,14 @@
 ![Progress Over Time](./LeetCode/progress.png)
 
 ### 🧮 Progress
-`█░░░░░░░░░░` **0%** (17 / 2800 problems)
-🕓 Last Updated: **12 Nov 2025, 05:07 PM**
+`█░░░░░░░░░░` **0%** (18 / 2800 problems)
+🕓 Last Updated: **12 Nov 2025, 05:12 PM**
 
 ### 🧠 Language Split
 🐍 Python: 0% ☕ Java: 94%
 
 ## 🧘 Quote of the Run
-> 💡 Talk is cheap. Show me the code.
+> 💡 Before software can be reusable it first has to be usable.
 
 ## 🤝 Contributors
 <div align='center'><a href='https://github.com/Prabhat%20Kapkoti'><img src='https://github.com/Prabhat%20Kapkoti.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='Prabhat Kapkoti'/></a>
