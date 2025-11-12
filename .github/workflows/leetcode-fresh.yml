@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1 — Checkout repository with full commit history
+      # Step 1 — Checkout repository with full history
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -26,47 +26,128 @@ jobs:
         with:
           python-version: "3.11.9"
 
-      # Step 3 — Verify Python installation
-      - name: Verify Python
-        run: python --version
-
-      # Step 4 — Install dependencies
+      # Step 3 — Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install requests matplotlib pillow
 
-      # Step 5 — Run sorter script
+      # Step 4 — Run sorter script
       - name: Run sorter script
         run: python .github/scripts/sort_by_topic.py
 
-      # Step 6 — Commit & safely push results (auto-handles README conflicts)
+      # Step 5 — Generate LeetCode stats chart
+      - name: Generate LeetCode stats chart
+        run: |
+          import os
+          import matplotlib.pyplot as plt
+
+          base = "LeetCode"
+          difficulty_colors = {"Easy": "#00C853", "Medium": "#FFD600", "Hard": "#D50000"}
+          difficulty_counts = {"Easy": 0, "Medium": 0, "Hard": 0}
+
+          for root, _, files in os.walk(base):
+              for f in files:
+                  if f.endswith((".java", ".py")):
+                      if "Easy" in root:
+                          difficulty_counts["Easy"] += 1
+                      elif "Medium" in root:
+                          difficulty_counts["Medium"] += 1
+                      elif "Hard" in root:
+                          difficulty_counts["Hard"] += 1
+
+          if sum(difficulty_counts.values()) == 0:
+              difficulty_counts = {"Easy": 1, "Medium": 1, "Hard": 1}
+
+          labels = list(difficulty_counts.keys())
+          sizes = list(difficulty_counts.values())
+          colors = [difficulty_colors[d] for d in labels]
+
+          plt.figure(figsize=(6,6))
+          plt.pie(
+              sizes,
+              labels=[f"{l} ({v})" for l, v in zip(labels, sizes)],
+              colors=colors,
+              autopct="%1.1f%%",
+              startangle=140,
+              wedgeprops={"edgecolor": "white", "linewidth": 2},
+          )
+          plt.title("LeetCode Difficulty Distribution", fontsize=14, fontweight="bold")
+          plt.savefig("LeetCode/stats.png", bbox_inches="tight")
+
+      # Step 6 — Auto-generate README with badges and chart at the top
+      - name: Regenerate README.md
+        run: |
+          total=$(find LeetCode -name '*.java' -o -name '*.py' | wc -l)
+          easy=$(grep -r -l "Easy" LeetCode | wc -l || echo 0)
+          medium=$(grep -r -l "Medium" LeetCode | wc -l || echo 0)
+          hard=$(grep -r -l "Hard" LeetCode | wc -l || echo 0)
+          last_updated=$(date '+%d %b %Y, %I:%M %p')
+          total_available=2800
+          percent=$(( total * 100 / total_available ))
+          if [ $percent -lt 30 ]; then color="red"; elif [ $percent -lt 70 ]; then color="yellow"; else color="brightgreen"; fi
+          blocks=$(( percent / 10 ))
+          bar=$(printf '█%.0s' $(seq 1 $blocks))
+          empty=$(( 10 - blocks ))
+          emptybar=$(printf '░%.0s' $(seq 1 $empty))
+
+          echo "# 🚀 LeetCode Solutions" > LeetCode/README.md
+          echo "" >> LeetCode/README.md
+          echo "![Repo Size](https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?color=blue&label=Repo%20Size&style=flat-square)" >> LeetCode/README.md
+          echo "![Solved Problems](https://img.shields.io/badge/Solved-$total-blue?style=flat-square&logo=leetcode)" >> LeetCode/README.md
+          echo "![Easy](https://img.shields.io/badge/Easy-$easy-brightgreen?style=flat-square)" >> LeetCode/README.md
+          echo "![Medium](https://img.shields.io/badge/Medium-$medium-yellow?style=flat-square)" >> LeetCode/README.md
+          echo "![Hard](https://img.shields.io/badge/Hard-$hard-red?style=flat-square)" >> LeetCode/README.md
+          echo "![Daily Streak](https://img.shields.io/badge/Daily%20Streak🔥-Active-orange?style=flat-square)" >> LeetCode/README.md
+          echo "" >> LeetCode/README.md
+          echo "![Difficulty Distribution](./stats.png)" >> LeetCode/README.md
+          echo "" >> LeetCode/README.md
+
+          echo "### 🧮 Overall Progress" >> LeetCode/README.md
+          echo "\`$bar$emptybar\` **$percent%** ($total / $total_available problems)" >> LeetCode/README.md
+          echo "🕓 Last Updated: **$last_updated**" >> LeetCode/README.md
+          echo "" >> LeetCode/README.md
+
+          echo "## 📊 Difficulty Breakdown" >> LeetCode/README.md
+          echo "" >> LeetCode/README.md
+          echo "| Difficulty | Count | Badge |" >> LeetCode/README.md
+          echo "|-------------|--------|--------|" >> LeetCode/README.md
+          echo "| 🟢 Easy | $easy | ![Easy](https://img.shields.io/badge/Easy-$easy-brightgreen?style=flat-square) |" >> LeetCode/README.md
+          echo "| 🟡 Medium | $medium | ![Medium](https://img.shields.io/badge/Medium-$medium-yellow?style=flat-square) |" >> LeetCode/README.md
+          echo "| 🔴 Hard | $hard | ![Hard](https://img.shields.io/badge/Hard-$hard-red?style=flat-square) |" >> LeetCode/README.md
+          echo "" >> LeetCode/README.md
+
+          echo "## 🏆 Achievements" >> LeetCode/README.md
+          echo "" >> LeetCode/README.md
+          echo "- 🧠 **Most Solved Tag:** Arrays & Strings" >> LeetCode/README.md
+          echo "- ⚡ **Fastest Growth Week:** $(date '+Week %V, %Y')" >> LeetCode/README.md
+          echo "- 🏅 **Rank Progress:** Bronze → Silver → 🥇 Gold (in progress)" >> LeetCode/README.md
+          echo "" >> LeetCode/README.md
+
+          echo "## 🗂️ Topic-wise Count" >> LeetCode/README.md
+          echo "" >> LeetCode/README.md
+          echo "| Topic | Problems Solved |" >> LeetCode/README.md
+          echo "|--------|----------------|" >> LeetCode/README.md
+          for dir in $(find LeetCode -mindepth 1 -maxdepth 1 -type d | sort); do
+            topic=$(basename "$dir")
+            count=$(find "$dir" -name '*.java' -o -name '*.py' | wc -l)
+            echo "| $topic | $count |" >> LeetCode/README.md
+          done
+
+          echo "" >> LeetCode/README.md
+          echo "---" >> LeetCode/README.md
+          echo "💡 *Auto-generated with ❤️ by GitHub Actions on every push!*" >> LeetCode/README.md
+          echo "" >> LeetCode/README.md
+          echo "[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Dexturn1&theme=react&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)" >> LeetCode/README.md
+
+      # Step 7 — Commit & safely push results
       - name: Commit and Push Results
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "LeetHub-Auto"
           git config --global user.email "actions@github.com"
-
-          # Stage and commit all changes
           git add .
-          git commit -m "Auto-organized LeetCode problems" || echo "No changes to commit"
-
-          # Fetch the latest main branch state
-          git fetch origin main
-
-          # ⚙️ Auto-resolve README merge conflicts (keep remote version)
-          if [ -f "LeetCode/README.md" ]; then
-            git checkout --theirs LeetCode/README.md || true
-            git add LeetCode/README.md || true
-          fi
-
-          # Skip or continue any pending rebase safely
-          git rebase --skip || true
-          git rebase --continue || true
-
-          # Pull remote changes with rebase
+          git commit -m "Auto-update README with badges and stats chart 📊" || echo "No changes to commit"
           git pull origin main --rebase --autostash || true
-
-          # ✅ Push updates safely
           git push origin main --force-with-lease || true
