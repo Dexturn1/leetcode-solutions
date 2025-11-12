@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1 — Checkout repo with full history
+      # Step 1 — Checkout repository with full commit history
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: "3.11.9"
 
-      # Step 3 — Verify Python
+      # Step 3 — Verify Python installation
       - name: Verify Python
         run: python --version
 
@@ -36,11 +36,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      # Step 5 — Run sorting script
+      # Step 5 — Run sorter script
       - name: Run sorter script
         run: python .github/scripts/sort_by_topic.py
 
-      # Step 6 — Commit & safely push results
+      # Step 6 — Commit & safely push results (auto-handles README conflicts)
       - name: Commit and Push Results
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -48,12 +48,25 @@ jobs:
           git config --global user.name "LeetHub-Auto"
           git config --global user.email "actions@github.com"
 
+          # Stage and commit all changes
           git add .
           git commit -m "Auto-organized LeetCode problems" || echo "No changes to commit"
 
-          # Ensure latest branch state
+          # Fetch the latest main branch state
           git fetch origin main
+
+          # ⚙️ Auto-resolve README merge conflicts (keep remote version)
+          if [ -f "LeetCode/README.md" ]; then
+            git checkout --theirs LeetCode/README.md || true
+            git add LeetCode/README.md || true
+          fi
+
+          # Skip or continue any pending rebase safely
+          git rebase --skip || true
+          git rebase --continue || true
+
+          # Pull remote changes with rebase
           git pull origin main --rebase --autostash || true
 
-          # Safe push (no overwrite if upstream changes exist)
-          git push origin main --force-with-lease
+          # ✅ Push updates safely
+          git push origin main --force-with-lease || true
