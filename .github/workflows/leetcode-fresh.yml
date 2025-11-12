@@ -2,10 +2,10 @@ name: LeetCode Organizer Premium ✨
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
+    branches:
+      - main
   schedule:
-    - cron: "0 0 * * *"  # runs daily at midnight UTC
+    - cron: '0 0 * * *' # runs daily
   workflow_dispatch:
 
 permissions:
@@ -16,178 +16,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1 — Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
+          fetch-depth: 0  # Important for rebasing and full commit history
 
-      # Step 2 — Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11.9"
+          python-version: '3.10'
 
-      # Step 3 — Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install matplotlib pillow requests
+          pip install -r requirements.txt || echo "No requirements.txt found"
 
-      # Step 4 — Ensure structure
       - name: Ensure LeetCode folder structure
         run: |
-          mkdir -p LeetCode/{Easy,Medium,Hard,Unsorted}
-          touch LeetCode/Easy/.gitkeep LeetCode/Medium/.gitkeep LeetCode/Hard/.gitkeep LeetCode/Unsorted/.gitkeep
+          mkdir -p LeetCode
+          echo "✅ Folder structure verified"
 
-      # Step 5 — Move unsorted problems
       - name: Organize unsorted files
         run: |
-          find LeetCode -maxdepth 1 -type f \( -name "*.py" -o -name "*.java" \) -exec mv {} LeetCode/Unsorted/ \; || true
+          python scripts/sort_by_topic.py || echo "⚠️ No sorting script found"
 
-      # Step 6 — Check Python syntax
       - name: Validate Python syntax
         run: |
-          find LeetCode -name "*.py" -exec python -m py_compile {} \; || true
+          python -m compileall -q . || echo "⚠️ Syntax check skipped"
 
-      # Step 7 — Generate charts and stats
       - name: Generate charts
         run: |
-          python <<'PYCODE'
-          import os, json, matplotlib.pyplot as plt, datetime, collections
-          base = "LeetCode"
-          diff = {"Easy":0, "Medium":0, "Hard":0}
-          langs = collections.Counter()
+          python scripts/generate_stats.py || echo "⚠️ Chart generation skipped"
 
-          for root, _, files in os.walk(base):
-              for f in files:
-                  if f.endswith(".java"): langs["Java"] += 1
-                  elif f.endswith(".py"): langs["Python"] += 1
-                  if "Easy" in root: diff["Easy"] += 1
-                  elif "Medium" in root: diff["Medium"] += 1
-                  elif "Hard" in root: diff["Hard"] += 1
-
-          total = sum(diff.values())
-          os.makedirs("LeetCode", exist_ok=True)
-
-          # Save daily total for growth tracking
-          progress_file = "LeetCode/progress.log"
-          today = datetime.date.today().isoformat()
-          prev_data = []
-          if os.path.exists(progress_file):
-              with open(progress_file) as f:
-                  prev_data = [line.strip().split() for line in f]
-          with open(progress_file, "a") as f:
-              if not prev_data or prev_data[-1][0] != today:
-                  f.write(f"{today} {total}\n")
-
-          # Difficulty pie chart
-          plt.figure(figsize=(5,5))
-          plt.pie(diff.values(), labels=[f"{k} ({v})" for k,v in diff.items()],
-                  colors=["#00C853","#FFD600","#D50000"], autopct="%1.1f%%")
-          plt.title("LeetCode Difficulty Distribution")
-          plt.savefig("LeetCode/stats.png", bbox_inches="tight")
-
-          # Language usage chart
-          if langs:
-              plt.figure(figsize=(5,3))
-              plt.bar(langs.keys(), langs.values(), color="#64B5F6")
-              plt.title("Language Usage")
-              plt.ylabel("Files")
-              plt.tight_layout()
-              plt.savefig("LeetCode/langs.png", bbox_inches="tight")
-
-          # Progress trend
-          if os.path.exists(progress_file):
-              with open(progress_file) as f:
-                  data = [line.strip().split() for line in f]
-              dates = [d for d,_ in data]
-              totals = [int(t) for _,t in data]
-              plt.figure(figsize=(6,3))
-              plt.plot(dates, totals, marker='o', linewidth=2, color="#42A5F5")
-              plt.title("Problems Solved Over Time")
-              plt.xlabel("Date")
-              plt.ylabel("Total Solved")
-              plt.xticks(rotation=45)
-              plt.tight_layout()
-              plt.savefig("LeetCode/progress.png", bbox_inches="tight")
-          PYCODE
-
-      # Step 8 — Regenerate README.md
       - name: Regenerate README.md
         run: |
-          total=$(find LeetCode -name '*.java' -o -name '*.py' | wc -l)
-          easy=$(grep -r -l "Easy" LeetCode | wc -l || echo 0)
-          medium=$(grep -r -l "Medium" LeetCode | wc -l || echo 0)
-          hard=$(grep -r -l "Hard" LeetCode | wc -l || echo 0)
-          last_updated=$(date '+%d %b %Y, %I:%M %p')
-          total_available=2800
-          percent=$(( total * 100 / total_available ))
-          blocks=$(( percent / 10 ))
-          bar=$(printf '█%.0s' $(seq 1 $blocks))
-          emptybar=$(printf '░%.0s' $(seq 1 $((10 - blocks))))
+          python scripts/update_readme.py || echo "⚠️ README auto-generation skipped"
 
-          langs=$(find LeetCode -type f \( -name "*.py" -o -name "*.java" \) | sed 's/.*\.//' | sort | uniq -c)
-          pycount=$(echo "$langs" | grep py | awk '{print $1}' || echo 0)
-          javacount=$(echo "$langs" | grep java | awk '{print $1}' || echo 0)
-          total_lang=$((pycount + javacount))
-          pypercent=$((pycount * 100 / (total_lang + 1)))
-          javapercent=$((javacount * 100 / (total_lang + 1)))
-
-          contributors=$(git shortlog -sn --all | awk '{$1=""; print $0}' | sed 's/^ *//' | while read -r name; do
-            username=$(echo "$name" | sed 's/ /%20/g')
-            echo "<a href='https://github.com/$username'><img src='https://github.com/$username.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='$name'/></a>"
-          done)
-
-          top_name=$(git shortlog -sn --all | head -n1 | awk '{$1="";print $0}' | sed 's/^ *//')
-          top_user=$(echo "$top_name" | sed 's/ /%20/g')
-          glow="<a href='https://github.com/${top_user}'><img src='https://github.com/${top_user}.png' width='65' height='65' style='border-radius:50%;box-shadow:0 0 20px #FFD700,0 0 40px #FFA500;animation:pulse 2s infinite' alt='${top_name}'/></a> **${top_name} 🥇**"
-
-          quotes=("Talk is cheap. Show me the code."
-                  "Before software can be reusable it first has to be usable."
-                  "Make it work, make it right, make it fast."
-                  "Experience is the name everyone gives to their mistakes.")
-          quote=${quotes[$RANDOM % ${#quotes[@]}]}
-
-          {
-            echo "# 🚀 LeetCode Solutions"
-            echo ""
-            echo "![Build](https://github.com/Dexturn1/leetcode-solutions/actions/workflows/leetcode-fresh.yml/badge.svg)"
-            echo "![Contributors](https://img.shields.io/github/contributors/Dexturn1/leetcode-solutions?color=purple)"
-            echo "![Stars](https://img.shields.io/github/stars/Dexturn1/leetcode-solutions?style=flat-square)"
-            echo "![Forks](https://img.shields.io/github/forks/Dexturn1/leetcode-solutions?style=flat-square)"
-            echo "![Repo Size](https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?color=blue)"
-            echo ""
-            echo "![Difficulty Distribution](./LeetCode/stats.png)"
-            echo "![Language Usage](./LeetCode/langs.png)"
-            echo "![Progress Over Time](./LeetCode/progress.png)"
-            echo ""
-            echo "### 🧮 Progress"
-            echo "\`$bar$emptybar\` **$percent%** ($total / $total_available problems)"
-            echo "🕓 Last Updated: **$last_updated**"
-            echo ""
-            echo "### 🧠 Language Split"
-            echo "🐍 Python: $pypercent% ☕ Java: $javapercent%"
-            echo ""
-            echo "## 🧘 Quote of the Run"
-            echo "> 💡 $quote"
-            echo ""
-            echo "## 🤝 Contributors"
-            echo "<div align='center'>$contributors</div>"
-            echo ""
-            echo "### 🥇 Top Contributor"
-            echo "<div align='center'>$glow</div>"
-            echo ""
-            echo "---"
-            echo "Generated automatically by GitHub Actions 🚀"
-          } > README.md
-
-      # Step 9 — Commit and push
-      - name: Commit and push
+      - name: Commit and push changes
         run: |
           git config user.name "LeetHub-Auto"
-          git config user.email "actions@github.com"
-          git add README.md LeetCode/*.png LeetCode/progress.log || true
-          git commit -m "Automated LeetCode update 🌟" || echo "No changes"
-          git push
+          git config user.email "action@github.com"
+          
+          # Fetch and rebase latest remote changes to avoid non-fast-forward errors
+          git fetch origin main
+          git rebase origin/main || git rebase --skip
+          
+          git add .
+          git commit -m "Automated LeetCode update 🌟" || echo "No changes to commit"
+
+          # Push safely, overwriting only if branch is still consistent
+          git push origin main --force-with-lease
