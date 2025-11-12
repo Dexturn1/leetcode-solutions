@@ -1,23 +1,45 @@
-# 🧠 LeetCode Auto Tracker
+# 🚀 LeetCode Solutions
 
-![Problems Solved](https://img.shields.io/badge/Problems_Solved-1-blue)
-![Easy](https://img.shields.io/badge/Easy-0-green)
-![Medium](https://img.shields.io/badge/Medium-1-orange)
-![Hard](https://img.shields.io/badge/Hard-0-red)
-![Last Updated](https://img.shields.io/badge/Updated-2025-11-12%2015:33%20UTC-grey)
+![Repo Size](https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?color=blue&label=Repo%20Size&style=flat-square)
+![Solved Problems](https://img.shields.io/badge/Solved-17-blue?style=flat-square&logo=leetcode)
+![Easy](https://img.shields.io/badge/Easy-1-brightgreen?style=flat-square)
+![Medium](https://img.shields.io/badge/Medium-23-yellow?style=flat-square)
+![Hard](https://img.shields.io/badge/Hard-5-red?style=flat-square)
+![Daily Streak](https://img.shields.io/badge/Daily%20Streak🔥-Active-orange?style=flat-square)
 
-Total Problems Solved: **1**
+![Difficulty Distribution](./stats.png)
 
-## 🧩 By Difficulty
-- 🟢 Easy: 0
-- 🟠 Medium: 1
-- 🔴 Hard: 0
+### 🧮 Overall Progress
+`█░░░░░░░░░░` **0%** (17 / 2800 problems)
+🕓 Last Updated: **12 Nov 2025, 03:46 PM**
 
-## 📂 Topics
-| Topic | Problems | Link |
-|--------|-----------|------|
-| Array | 1 | [View](Array/README.md) |
-| Hash Table | 1 | [View](Hash_Table/README.md) |
-| Sliding Window | 1 | [View](Sliding_Window/README.md) |
+## 📊 Difficulty Breakdown
 
-_Last updated on **2025-11-12 15:33 UTC**_
+| Difficulty | Count | Badge |
+|-------------|--------|--------|
+| 🟢 Easy | 1 | ![Easy](https://img.shields.io/badge/Easy-1-brightgreen?style=flat-square) |
+| 🟡 Medium | 23 | ![Medium](https://img.shields.io/badge/Medium-23-yellow?style=flat-square) |
+| 🔴 Hard | 5 | ![Hard](https://img.shields.io/badge/Hard-5-red?style=flat-square) |
+
+## 🏆 Achievements
+
+- 🧠 **Most Solved Tag:** Arrays & Strings
+- ⚡ **Fastest Growth Week:** Week 46, 2025
+- 🏅 **Rank Progress:** Bronze → Silver → 🥇 Gold (in progress)
+
+## 🗂️ Topic-wise Count
+
+| Topic | Problems Solved |
+|--------|----------------|
+| Array | 3 |
+| Backtracking | 4 |
+| Bit_Manipulation | 1 |
+| Dynamic_Programming | 2 |
+| Hash_Table | 2 |
+| Sliding_Window | 2 |
+| String | 3 |
+
+---
+💡 *Auto-generated with ❤️ by GitHub Actions on every push!*
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Dexturn1&theme=react&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
