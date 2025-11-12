@@ -17,26 +17,6 @@ Every time I solve a problem on [LeetCode](https://leetcode.com/), this repo aut
 
 ---
 
-## 📂 Repository Structure
-Each problem is placed inside one or more topic folders like:
-LeetCode/
-├── Array/
-│ └── Medium/
-│ └── 0090-subsets-ii/
-│ ├── 0090-subsets-ii.java
-│ └── README.md
-├── Backtracking/
-│ └── Medium/
-│ └── 0090-subsets-ii/
-│ ├── 0090-subsets-ii.java
-│ └── README.md
-└── Bit_Manipulation/
-└── Medium/
-└── 0090-subsets-ii/
-├── 0090-subsets-ii.java
-└── README.md
-
-
 > Problems that belong to multiple topics (like Array + DP) appear in **both folders** automatically.
 
 ---
@@ -102,4 +82,3 @@ Action File:
 ---
 
 ⭐ If you find this automation useful, consider giving it a **Star** on GitHub!
-
