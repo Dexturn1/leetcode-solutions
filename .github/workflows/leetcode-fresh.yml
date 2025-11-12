@@ -1,14 +1,20 @@
-name: Fresh LeetCode Organizer
+name: LeetCode Organizer Deluxe ✨
 
 on:
   push:
     branches: [ main ]
+  pull_request:
   schedule:
-    - cron: "0 0 * * *" # runs daily at midnight UTC
+    - cron: "0 0 * * *" # daily at midnight UTC
   workflow_dispatch:
 
 permissions:
   contents: write
+  pull-requests: write
+
+env:
+  REPO_OWNER: Dexturn1
+  REPO_NAME: leetcode-solutions
 
 jobs:
   organize:
@@ -22,165 +28,181 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      # Step 2 — Set up Python
+      # Step 2 — Cache pip dependencies
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # Step 3 — Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11.9"
 
-      # Step 3 — Install dependencies
+      # Step 4 — Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests matplotlib pillow
+          pip install matplotlib pillow requests
 
-      # Step 4 — Ensure structure and default files exist
-      - name: Ensure base structure
+      # Step 5 — Ensure directory structure
+      - name: Ensure structure
         run: |
-          mkdir -p LeetCode/Easy LeetCode/Medium LeetCode/Hard
-          touch LeetCode/Easy/.gitkeep
-          touch LeetCode/Medium/.gitkeep
-          touch LeetCode/Hard/.gitkeep
+          mkdir -p LeetCode/{Easy,Medium,Hard}
+          touch LeetCode/Easy/.gitkeep LeetCode/Medium/.gitkeep LeetCode/Hard/.gitkeep
+          echo "✅ Structure ready."
 
-          if [ ! -f README.md ]; then
-            echo "# 🚀 LeetCode Solutions" > README.md
-            echo "" >> README.md
-            echo "![Build](https://github.com/Dexturn1/leetcode-solutions/actions/workflows/leetcode-fresh.yml/badge.svg)" >> README.md
-            echo "![Last Commit](https://img.shields.io/github/last-commit/Dexturn1/leetcode-solutions)" >> README.md
-            echo "![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)" >> README.md
-            echo "" >> README.md
-            echo "Welcome to my organized collection of LeetCode solutions." >> README.md
-            echo "" >> README.md
-            echo "## 📁 Folder Structure" >> README.md
-            echo "- 🟢 LeetCode/Easy" >> README.md
-            echo "- 🟡 LeetCode/Medium" >> README.md
-            echo "- 🔴 LeetCode/Hard" >> README.md
-            echo "" >> README.md
-            echo "Each folder contains problems grouped by difficulty." >> README.md
-          fi
-
-      # Step 5 — Clean up empty topic folders
-      - name: Clean up empty folders
+      # Step 6 — Clean up empty folders
+      - name: Cleanup empty folders
         run: |
-          echo "🧹 Cleaning up empty folders..."
-          find LeetCode -mindepth 1 -type d ! -path "LeetCode/Easy" ! -path "LeetCode/Medium" ! -path "LeetCode/Hard" -empty -exec rm -rf {} +
-          echo "✅ Cleanup complete."
+          find LeetCode -mindepth 1 -type d -empty -exec rm -rf {} +
 
-      # Step 6 — Run sorter script
-      - name: Run sorter script
-        run: |
-          python .github/scripts/sort_by_topic.py || echo "⚠️ Sort script completed with warnings but workflow continues."
-
-      # Step 7 — Generate difficulty chart
-      - name: Generate LeetCode stats chart
+      # Step 7 — Generate LeetCode stats (difficulty + languages)
+      - name: Generate stats charts
         run: |
           python <<'PYCODE'
-          import os
-          import matplotlib.pyplot as plt
-
+          import os, matplotlib.pyplot as plt, collections, datetime, json
           base = "LeetCode"
-          colors = {"Easy": "#00C853", "Medium": "#FFD600", "Hard": "#D50000"}
-          counts = {"Easy": 0, "Medium": 0, "Hard": 0}
+          langs = collections.Counter()
+          diff = {"Easy":0, "Medium":0, "Hard":0}
 
           for root, _, files in os.walk(base):
               for f in files:
-                  if f.endswith((".java", ".py")):
-                      if "Easy" in root:
-                          counts["Easy"] += 1
-                      elif "Medium" in root:
-                          counts["Medium"] += 1
-                      elif "Hard" in root:
-                          counts["Hard"] += 1
+                  if f.endswith(".java"): langs["Java"] += 1
+                  elif f.endswith(".py"): langs["Python"] += 1
+                  if "Easy" in root: diff["Easy"] += 1
+                  elif "Medium" in root: diff["Medium"] += 1
+                  elif "Hard" in root: diff["Hard"] += 1
 
-          if sum(counts.values()) == 0:
-              counts = {"Easy": 1, "Medium": 1, "Hard": 1}
-
-          plt.figure(figsize=(6, 6))
-          plt.pie(
-              counts.values(),
-              labels=[f"{k} ({v})" for k, v in counts.items()],
-              colors=[colors[k] for k in counts],
-              autopct="%1.1f%%",
-              startangle=140,
-              wedgeprops={"edgecolor": "white", "linewidth": 2},
-          )
-          plt.title("LeetCode Difficulty Distribution", fontsize=14, fontweight="bold")
+          if not sum(diff.values()):
+              diff = {"Easy":1,"Medium":1,"Hard":1}
           os.makedirs("LeetCode", exist_ok=True)
+
+          # Pie chart
+          plt.figure(figsize=(5,5))
+          plt.pie(diff.values(), labels=[f"{k} ({v})" for k,v in diff.items()],
+                  colors=["#00C853","#FFD600","#D50000"], autopct="%1.1f%%")
+          plt.title("Difficulty Distribution")
           plt.savefig("LeetCode/stats.png", bbox_inches="tight")
+
+          # Language bar chart
+          plt.figure(figsize=(4,3))
+          plt.bar(langs.keys(), langs.values(), color="#64B5F6")
+          plt.title("Language Usage")
+          plt.ylabel("Files")
+          plt.tight_layout()
+          plt.savefig("LeetCode/langs.png")
+
+          # Save totals for Gist sync
+          data = {
+              "total": sum(diff.values()),
+              "easy": diff["Easy"],
+              "medium": diff["Medium"],
+              "hard": diff["Hard"],
+              "langs": dict(langs),
+              "last_update": datetime.datetime.utcnow().isoformat()
+          }
+          with open("LeetCode/stats.json","w") as f: json.dump(data,f)
           PYCODE
 
-      # Step 8 — Generate dynamic README
+      # Step 8 — Regenerate README.md
       - name: Regenerate README.md
         run: |
           total=$(find LeetCode -name '*.java' -o -name '*.py' | wc -l)
           easy=$(grep -r -l "Easy" LeetCode | wc -l || echo 0)
           medium=$(grep -r -l "Medium" LeetCode | wc -l || echo 0)
           hard=$(grep -r -l "Hard" LeetCode | wc -l || echo 0)
+          langs=$(find LeetCode -type f \( -name "*.py" -o -name "*.java" \) | sed 's/.*\.//' | sort | uniq -c)
           last_updated=$(date '+%d %b %Y, %I:%M %p')
-          total_available=2800
-          percent=$(( total * 100 / total_available ))
-          [ $percent -lt 30 ] && color="red" || ([ $percent -lt 70 ] && color="yellow" || color="brightgreen")
-          blocks=$(( percent / 10 ))
-          bar=$(printf '█%.0s' $(seq 1 $blocks))
-          emptybar=$(printf '░%.0s' $(seq 1 $((10 - blocks))))
 
-          contributors=$(git shortlog -sn --all | awk '{$1=""; print $0}' | sort | uniq | sed 's/^ *//' | while read -r name; do
-            user=$(echo "$name" | sed 's/ /%20/g')
-            echo "<a href='https://github.com/$name'><img src='https://github.com/$name.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='$name'/></a>"
+          contributors_list=$(git shortlog -sn --all | sort -nr)
+          top_name=$(echo "$contributors_list" | head -n1 | awk '{$1="";print $0}' | sed 's/^ *//')
+          top_user=$(echo "$top_name" | sed 's/ /%20/g')
+
+          glow="<a href='https://github.com/${top_user}'><img src='https://github.com/${top_user}.png' width='60' height='60' style='border-radius:50%;box-shadow:0 0 15px #FFD700,0 0 30px #FFA500;animation:pulse 2s infinite' alt='${top_name}'/></a> **${top_name} 🥇**"
+
+          contributors=$(echo "$contributors_list" | awk '{$1=""; print $0}' | sed 's/^ *//' | while read -r name; do
+            username=$(echo "$name" | sed 's/ /%20/g')
+            commits_url="https://github.com/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}/commits?author=$username"
+            echo "<a href='$commits_url'><img src='https://github.com/$username.png' width='50' height='50' style='border-radius:50%;margin:4px' alt='$name'/></a>"
           done)
 
           {
-            echo "# 🚀 LeetCode Solutions"
+            echo "# 🚀 LeetCode Solutions (Deluxe Edition)"
             echo ""
-            echo "![Build](https://github.com/Dexturn1/leetcode-solutions/actions/workflows/leetcode-fresh.yml/badge.svg)"
-            echo "![Last Commit](https://img.shields.io/github/last-commit/Dexturn1/leetcode-solutions)"
-            echo "![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)"
-            echo ""
-            echo "![Repo Size](https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?color=blue&label=Repo%20Size&style=flat-square)"
-            echo "![Solved Problems](https://img.shields.io/badge/Solved-$total-blue?style=flat-square&logo=leetcode)"
-            echo "![Easy](https://img.shields.io/badge/Easy-$easy-brightgreen?style=flat-square)"
-            echo "![Medium](https://img.shields.io/badge/Medium-$medium-yellow?style=flat-square)"
-            echo "![Hard](https://img.shields.io/badge/Hard-$hard-red?style=flat-square)"
+            echo "![Build](https://github.com/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}/actions/workflows/leetcode-deluxe.yml/badge.svg)"
+            echo "![Contributors](https://img.shields.io/github/contributors/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}?color=purple)"
+            echo "![Stars](https://img.shields.io/github/stars/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}?style=flat-square)"
+            echo "![Forks](https://img.shields.io/github/forks/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}?style=flat-square)"
+            echo "![Repo Size](https://img.shields.io/github/repo-size/${{ env.REPO_OWNER }}/${{ env.REPO_NAME }}?color=blue)"
             echo ""
             echo "![Difficulty Distribution](./LeetCode/stats.png)"
+            echo "![Language Usage](./LeetCode/langs.png)"
             echo ""
-            echo "### 🧮 Overall Progress"
-            echo "\`$bar$emptybar\` **$percent%** ($total / $total_available problems)"
+            echo "### 🧮 Progress"
+            echo "**Total:** $total problems"
+            echo "🟢 Easy: $easy • 🟡 Medium: $medium • 🔴 Hard: $hard"
             echo "🕓 Last Updated: **$last_updated**"
             echo ""
-            echo "## 📊 Difficulty Breakdown"
-            echo "| Difficulty | Count |"
-            echo "|-------------|--------|"
-            echo "| 🟢 Easy | $easy |"
-            echo "| 🟡 Medium | $medium |"
-            echo "| 🔴 Hard | $hard |"
-            echo ""
-            echo "## 🏆 Achievements"
-            echo "- 🧠 **Most Solved Tag:** Arrays & Strings"
-            echo "- ⚡ **Fastest Growth Week:** $(date '+Week %V, %Y')"
-            echo "- 🏅 **Rank Progress:** Bronze → Silver → 🥇 Gold (in progress)"
-            echo ""
-            echo "## 🗂️ Topic-wise Count"
-            echo "| Topic | Problems Solved |"
-            echo "|--------|----------------|"
-            for dir in $(find LeetCode -mindepth 1 -maxdepth 1 -type d | sort); do
-              topic=$(basename "$dir")
-              count=$(find "$dir" -name '*.java' -o -name '*.py' | wc -l)
-              echo "| $topic | $count |"
-            done
+            echo "## 🧠 Languages Used"
+            echo "\`\`\`"
+            echo "$langs"
+            echo "\`\`\`"
             echo ""
             echo "## 🤝 Contributors"
             echo "<div align='center'>$contributors</div>"
+            echo ""
+            echo "### 🥇 Top Contributor"
+            echo "<div align='center'>$glow</div>"
             echo ""
             echo "---"
             echo "Generated automatically by GitHub Actions 🚀"
           } > README.md
 
       # Step 9 — Commit and push changes
-      - name: Commit and push changes
+      - name: Commit and push
         run: |
           git config user.name "LeetHub-Auto"
           git config user.email "actions@github.com"
-          git add README.md LeetCode/stats.png LeetCode/**/.gitkeep || true
-          git commit -m "Auto-organized LeetCode problems and updated README" || echo "No changes to commit"
+          git add README.md LeetCode/*.png LeetCode/*.json || true
+          git commit -m "Deluxe LeetCode automation update" || echo "No changes"
           git push
+
+      # Step 10 — Gist Sync (optional)
+      - name: Update Gist
+        if: env.GIST_TOKEN != ''
+        run: |
+          gist_id="YOUR_GIST_ID"
+          curl -X PATCH \
+            -H "Authorization: token ${{ secrets.GIST_TOKEN }}" \
+            -d "{\"files\": {\"leetcode-stats.json\": {\"content\": \"$(cat LeetCode/stats.json)\"}}}" \
+            https://api.github.com/gists/$gist_id
+
+      # Step 11 — Discord Notification on Failure
+      - name: Notify failure
+        if: failure()
+        run: |
+          curl -H "Content-Type: application/json" \
+            -d "{\"content\": \"❌ Workflow failed in **${{ env.REPO_NAME }}**! Check: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\"}" \
+            ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      # Step 12 — Comment workflow summary
+      - name: Comment summary
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const body = `✅ Workflow succeeded!  
+            **Solved Problems:** ${process.env.total}  
+            🟢 Easy: ${process.env.easy} | 🟡 Medium: ${process.env.medium} | 🔴 Hard: ${process.env.hard}`;
+            github.rest.issues.createComment({
+              issue_number: context.issue.number || 1,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body
+            });
