@@ -1,109 +1,86 @@
-<!-- HEADER: Deep Blue + Lime Green Gradient -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&section=header&color=0:0A0F1F,100:1D9AFF&fontColor=A8FF3E&text=LeetCode%20Solutions&fontSize=45&animation=fadeIn&fontAlignY=32"/>
-
-# Overview
-
-A fully automated, performance-focused archive of LeetCode problem solutions.  
-Designed using a Deep Blue + Lime Green glow theme for a modern, futuristic aesthetic.  
-All solutions sync automatically through GitHub Actions and LeetCode exporters.
+<!-- Modern Minimal Animated Header -->
+<div align="center">
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&size=28&duration=3000&pause=1000&color=3498DB&center=true&vCenter=true&width=600&lines=LeetCode+Solutions;Modern+Minimal+Dashboard;Auto+Synced+and+Organized" alt="Typing Animation" />
+</div>
 
 ---
 
-# Progress Dashboard
+## Overview
+
+A clean and modern archive of my LeetCode problem solutions.  
+This repository focuses on readable solutions, organized structure, and minimal visual design.  
+All updates are automated using GitHub Actions and LeetCode export tools.
+
+---
+
+## Progress Overview
 
 <div align="center">
 
-<!-- Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=90&color=0A0F1F&text=Progress%20Dashboard&fontColor=A8FF3E&fontSize=32"/>
-
-## Overall Stats
-<img src="https://img.shields.io/badge/Solved-18/2800-0A0F1F?style=for-the-badge&logo=leetcode&logoColor=A8FF3E&color=1D9AFF&labelColor=0A0F1F"/>
-
----
-
-## Difficulty Breakdown
-<img src="https://img.shields.io/badge/Easy-5-1D9AFF?style=for-the-badge&labelColor=0A0F1F&color=A8FF3E"/>
-<img src="https://img.shields.io/badge/Medium-11-1D9AFF?style=for-the-badge&labelColor=0A0F1F&color=6CFF6C"/>
-<img src="https://img.shields.io/badge/Hard-2-1D9AFF?style=for-the-badge&labelColor=0A0F1F&color=00E7D3"/>
-
----
-
-## Streak Tracker
-<img src="https://streak-stats.demolab.com?user=dexturn1&theme=blue_night&hide_border=true&border_radius=12&ring=A8FF3E&fire=1D9AFF&currStreakNum=A8FF3E&currStreakLabel=FFFFFF&sideNums=1D9AFF"/>
-
----
-
-## Weekly Activity Chart
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=dexturn1&theme=react-dark&hide_border=true&area=true&line=A8FF3E&point=1D9AFF&area_color=0A0F1F"/>
-
----
-
-## Category Progress
-
-<table>
-<tr>
-  <td><b style="color:A8FF3E">Arrays</b></td>
-  <td><img src="https://img.shields.io/badge/7_completed-0A0F1F?style=flat-square&color=1D9AFF"/></td>
-</tr>
-<tr>
-  <td><b style="color:A8FF3E">Strings</b></td>
-  <td><img src="https://img.shields.io/badge/3_completed-0A0F1F?style=flat-square&color=00E7D3"/></td>
-</tr>
-<tr>
-  <td><b style="color:A8FF3E">Hashing</b></td>
-  <td><img src="https://img.shields.io/badge/2_completed-0A0F1F?style=flat-square&color=6CFF6C"/></td>
-</tr>
-<tr>
-  <td><b style="color:A8FF3E">Recursion</b></td>
-  <td><img src="https://img.shields.io/badge/1_completed-0A0F1F?style=flat-square&color=A8FF3E"/></td>
-</tr>
-</table>
-
----
-
-## Daily Dashboard (Glass Panel)
-
-<div style="
-width: 85%;
-padding: 24px;
-border-radius: 14px;
-background: rgba(10, 15, 31, 0.45);
-backdrop-filter: blur(14px);
-border: 1px solid rgba(168, 255, 62, 0.3);
-box-shadow: 0 0 25px rgba(168, 255, 62, 0.4);
-color: #A8FF3E;
-margin-top: 20px;
-font-size: 15px;
-">
-<b>Problems Today:</b> 0  
-<b>Current Focus:</b> Arrays, Sliding Window  
-<b>Daily Target:</b> 3 Problems  
-</div>
-
----
-
-## Goals (Neumorphism Panel)
-
-<div style="
-background: #0A0F1F;
-padding: 24px;
-margin-top: 20px;
-border-radius: 16px;
-box-shadow: 12px 12px 28px #05070D, -12px -12px 28px #10192D;
-width: 85%;
-color: #A8FF3E;
-font-size: 15px;
-">
-<b>Next Milestone:</b> 50 Problems  
-<b>ETA:</b> 2–3 Weeks  
-<b>Target Topics:</b> LinkedList, Recursion, Dynamic Programming  
-</div>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1D9AFF,100:0A0F1F&height=140&section=footer"/>
+<!-- Clean Stats Bar -->
+<img src="https://img.shields.io/badge/Solved-18/2800-3498db?style=for-the-badge&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/Language-Java-2ecc71?style=for-the-badge&labelColor=0d1117" />
 
 </div>
 
 ---
 
-# Repository Structure
+## Visual Stats
+
+<div align="center">
+
+<!-- Streak (Minimal Dark Theme) -->
+<img src="https://streak-stats.demolab.com?user=dexturn1&theme=github-dark&hide_border=true&date_format=j%20M%5B%20Y%5D" />
+
+<br>
+
+<!-- Activity Graph (Blue Theme) -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=dexturn1&theme=github-dark&hide_border=true&area=true&line=3498db&point=9b59b6" />
+
+</div>
+
+---
+
+## Category Breakdown
+
+| Topic      | Progress | Color |
+|------------|----------|--------|
+| Arrays     | 7        | Blue   |
+| Strings    | 3        | Purple |
+| Hashing    | 2        | Green  |
+| Recursion  | 1        | Teal   |
+
+---
+
+## Clean Daily Panel
+
+<div align="center" style="
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #0d1117;
+    border: 1px solid #1f2937;
+    color: #e6edf3;
+    font-size: 15px;">
+    <b>Today’s Goal:</b> 3 Problems  
+    <br>
+    <b>Current Focus:</b> Patterns (Sliding Window, Hashing)  
+    <br>
+    <b>Status:</b> Work in progress  
+</div>
+
+---
+
+## Automation
+
+Every commit is automatically generated using LeetHub / LeetCode Exporter.  
+The stats, graphs, and sections update dynamically based on my activity.
+
+---
+
+## Maintainer
+
+Prabhat Kapkoti  
+GitHub: Dexturn1
+
 
