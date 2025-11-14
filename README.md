@@ -1,41 +1,109 @@
-# 🚀 LeetCode Solutions — by Prabhat Kapkoti
+<!-- HEADER: Deep Blue + Lime Green Gradient -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&section=header&color=0:0A0F1F,100:1D9AFF&fontColor=A8FF3E&text=LeetCode%20Solutions&fontSize=45&animation=fadeIn&fontAlignY=32"/>
 
-A clean and continuously updated collection of my LeetCode problem solutions, automated using GitHub Actions.
+# Overview
 
----
-
-## 📊 At a Glance
-- **🧮 Problems Solved:** 18+
-- **⏱ Last Updated:** 12 Nov 2025  
-- **💻 Primary Language:** Java  
-- **⚙️ Auto-Updated via:** LeetCode Organizer Premium + GitHub Actions  
+A fully automated, performance-focused archive of LeetCode problem solutions.  
+Designed using a Deep Blue + Lime Green glow theme for a modern, futuristic aesthetic.  
+All solutions sync automatically through GitHub Actions and LeetCode exporters.
 
 ---
 
-## 🧠 What This Repo Includes
-- Organized solutions with optimal approaches  
-- Time & Space complexity for every problem  
-- Auto-generated README & metadata  
-- Commit history synced with LeetCode submissions  
+# Progress Dashboard
+
+<div align="center">
+
+<!-- Banner -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=90&color=0A0F1F&text=Progress%20Dashboard&fontColor=A8FF3E&fontSize=32"/>
+
+## Overall Stats
+<img src="https://img.shields.io/badge/Solved-18/2800-0A0F1F?style=for-the-badge&logo=leetcode&logoColor=A8FF3E&color=1D9AFF&labelColor=0A0F1F"/>
 
 ---
 
-## 🎯 Goal
-Maintain a structured, high-quality archive of my problem-solving journey while improving DSA and Java proficiency.
+## Difficulty Breakdown
+<img src="https://img.shields.io/badge/Easy-5-1D9AFF?style=for-the-badge&labelColor=0A0F1F&color=A8FF3E"/>
+<img src="https://img.shields.io/badge/Medium-11-1D9AFF?style=for-the-badge&labelColor=0A0F1F&color=6CFF6C"/>
+<img src="https://img.shields.io/badge/Hard-2-1D9AFF?style=for-the-badge&labelColor=0A0F1F&color=00E7D3"/>
 
 ---
 
-## 🪄 Automation Stack
-- GitHub Actions  
-- LeetHub / LeetCode Organizer  
-- Custom parsing scripts  
+## Streak Tracker
+<img src="https://streak-stats.demolab.com?user=dexturn1&theme=blue_night&hide_border=true&border_radius=12&ring=A8FF3E&fire=1D9AFF&currStreakNum=A8FF3E&currStreakLabel=FFFFFF&sideNums=1D9AFF"/>
 
 ---
 
-## 🥇 Contributors
-<a href="https://github.com/Dexturn1"><img src="https://avatars.githubusercontent.com/u/104815270" width="40"/></a>
-<a href="https://github.com/actions-user"><img src="https://avatars.githubusercontent.com/u/65916846" width="40"/></a>
+## Weekly Activity Chart
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=dexturn1&theme=react-dark&hide_border=true&area=true&line=A8FF3E&point=1D9AFF&area_color=0A0F1F"/>
 
 ---
 
-Made with ❤️ by **Prabhat Kapkoti**
+## Category Progress
+
+<table>
+<tr>
+  <td><b style="color:A8FF3E">Arrays</b></td>
+  <td><img src="https://img.shields.io/badge/7_completed-0A0F1F?style=flat-square&color=1D9AFF"/></td>
+</tr>
+<tr>
+  <td><b style="color:A8FF3E">Strings</b></td>
+  <td><img src="https://img.shields.io/badge/3_completed-0A0F1F?style=flat-square&color=00E7D3"/></td>
+</tr>
+<tr>
+  <td><b style="color:A8FF3E">Hashing</b></td>
+  <td><img src="https://img.shields.io/badge/2_completed-0A0F1F?style=flat-square&color=6CFF6C"/></td>
+</tr>
+<tr>
+  <td><b style="color:A8FF3E">Recursion</b></td>
+  <td><img src="https://img.shields.io/badge/1_completed-0A0F1F?style=flat-square&color=A8FF3E"/></td>
+</tr>
+</table>
+
+---
+
+## Daily Dashboard (Glass Panel)
+
+<div style="
+width: 85%;
+padding: 24px;
+border-radius: 14px;
+background: rgba(10, 15, 31, 0.45);
+backdrop-filter: blur(14px);
+border: 1px solid rgba(168, 255, 62, 0.3);
+box-shadow: 0 0 25px rgba(168, 255, 62, 0.4);
+color: #A8FF3E;
+margin-top: 20px;
+font-size: 15px;
+">
+<b>Problems Today:</b> 0  
+<b>Current Focus:</b> Arrays, Sliding Window  
+<b>Daily Target:</b> 3 Problems  
+</div>
+
+---
+
+## Goals (Neumorphism Panel)
+
+<div style="
+background: #0A0F1F;
+padding: 24px;
+margin-top: 20px;
+border-radius: 16px;
+box-shadow: 12px 12px 28px #05070D, -12px -12px 28px #10192D;
+width: 85%;
+color: #A8FF3E;
+font-size: 15px;
+">
+<b>Next Milestone:</b> 50 Problems  
+<b>ETA:</b> 2–3 Weeks  
+<b>Target Topics:</b> LinkedList, Recursion, Dynamic Programming  
+</div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1D9AFF,100:0A0F1F&height=140&section=footer"/>
+
+</div>
+
+---
+
+# Repository Structure
+
