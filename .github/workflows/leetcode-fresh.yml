@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Required for rebase and full history access
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -52,22 +52,14 @@ jobs:
         run: |
           python scripts/update_readme.py || echo "⚠️ README generation skipped."
 
-      - name: Commit and push changes
+      - name: Commit and push changes (safe)
         run: |
           git config user.name "LeetHub-Auto"
           git config user.email "action@github.com"
-
-          # Stage everything before rebasing
-          git add -A
-          git commit -m "Pre-rebase auto-commit (temporary)" || echo "Nothing to commit before rebase"
-
-          # Fetch latest changes from remote and safely rebase
-          git fetch origin main
-          git rebase origin/main || git rebase --abort
-
-          # Stage and commit final changes
+          
           git add -A
           git commit -m "Automated LeetCode update 🌟" || echo "No changes to commit"
 
-          # Push safely without overwriting remote commits unexpectedly
+          # safe push — never fails with rebase conflicts
+          git pull --no-rebase origin main || true
           git push origin main --force-with-lease
