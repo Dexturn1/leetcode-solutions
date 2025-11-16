@@ -1,0 +1,37 @@
+name: Auto Organize LeetCode Solutions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  organize:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: pip install requests
+
+    - name: Run sorting script
+      run: python .github/scripts/sort_by_topic.py
+
+    - name: Commit changes
+      run: |
+        if ! git diff --quiet; then
+          git config user.name "actions-user"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Auto-organized LeetCode folders ✨"
+          git push
+        else
+          echo "No changes to commit."
+        fi
