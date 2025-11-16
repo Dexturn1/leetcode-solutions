@@ -5,13 +5,20 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   organize:
+    # Prevent infinite loop
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -26,9 +33,10 @@ jobs:
 
     - name: Commit changes
       run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
         if ! git diff --quiet; then
-          git config user.name "actions-user"
-          git config user.email "actions@github.com"
           git add -A
           git commit -m "Auto-organized LeetCode folders ✨"
           git push
