@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 0 * * *" # runs daily at midnight
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,50 +16,35 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+    - name: Checkout repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt || echo "⚠️ No requirements.txt found"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
 
-      - name: Ensure LeetCode folder structure
-        run: |
-          mkdir -p LeetCode
-          echo "✅ Folder structure verified."
+    - name: Ensure LeetCode directory exists
+      run: mkdir -p LeetCode
 
-      - name: Organize unsorted files
-        run: |
-          python scripts/sort_by_topic.py || echo "⚠️ No sorting script found."
+    - name: Run Auto-Sorting Script
+      run: python .github/scripts/sort_by_topic.py
 
-      - name: Validate Python syntax
-        run: |
-          python -m compileall -q . || echo "⚠️ Syntax validation skipped."
-
-      - name: Generate charts
-        run: |
-          python scripts/generate_stats.py || echo "⚠️ Chart generation skipped."
-
-      - name: Regenerate README.md
-        run: |
-          python scripts/update_readme.py || echo "⚠️ README generation skipped."
-
-      - name: Commit and push changes (safe)
-        run: |
-          git config user.name "LeetHub-Auto"
-          git config user.email "action@github.com"
-          
+    - name: Commit Organized Structure
+      run: |
+        if ! git diff --quiet; then
+          git config user.name "actions-user"
+          git config user.email "actions@github.com"
           git add -A
-          git commit -m "Automated LeetCode update 🌟" || echo "No changes to commit"
-
-          # safe push — never fails with rebase conflicts
-          git pull --no-rebase origin main || true
-          git push origin main --force-with-lease
+          git commit -m "🚀 Auto-Organized LeetCode solutions"
+          git push
+        else
+          echo "No changes to commit."
+        fi
