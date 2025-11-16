@@ -1,45 +1,63 @@
-name: Auto Organize LeetCode Solutions
+name: LeetCode Organizer Premium ✨
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   organize:
-    # Prevent infinite loop
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
+        persist-credentials: true
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: "3.11"
+        python-version: "3.10"
 
     - name: Install dependencies
-      run: pip install requests
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
 
-    - name: Run sorting script
+    - name: Ensure LeetCode directory exists
+      run: mkdir -p LeetCode
+
+    - name: Run Auto-Sorting Script
       run: python .github/scripts/sort_by_topic.py
 
-    - name: Commit changes
+    - name: Commit Organized Structure Safely
       run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git config user.name "actions-user"
+        git config user.email "actions@github.com"
 
-        if ! git diff --quiet; then
-          git add -A
-          git commit -m "Auto-organized LeetCode folders ✨"
-          git push
-        else
-          echo "No changes to commit."
+        echo "🔄 Fetching latest..."
+        git fetch origin main
+
+        echo "🧹 Hard-sync with remote (avoids push rejects)"
+        git reset --hard origin/main
+
+        echo "📌 Checking for changes..."
+        git add -A
+        
+        if git diff --cached --quiet; then
+          echo "✨ No changes to commit."
+          exit 0
         fi
+
+        echo "📝 Committing..."
+        git commit -m "🚀 Auto-Organized LeetCode solutions"
+
+        echo "⬆️ Pushing with safe force..."
+        git push --force-with-lease
