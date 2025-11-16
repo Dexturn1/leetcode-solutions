@@ -3,7 +3,6 @@ from datetime import datetime
 
 BASE_DIR = "LeetCode"
 API_URL = "https://leetcode.com/graphql"
-PROFILE_REPO = "../prabhatkapkoti"
 
 # ------------------ UTILITIES ------------------
 
@@ -11,32 +10,24 @@ def debug(msg):
     print(f"[📘] {msg}")
 
 def is_problem_folder(name):
-    """
-    Detect folders like '0001-two-sum' or '0733-flood-fill'
-    """
     return bool(re.match(r"^\d{4}-", name))
 
 def get_slug(folder):
-    match = re.match(r"^\d{4}-(.+)$", folder)
-    return match.group(1) if match else None
+    m = re.match(r"^\d{4}-(.+)$", folder)
+    return m.group(1) if m else None
 
 def get_problem_data(slug):
-    """
-    Fetch metadata from LeetCode:
-    - title
-    - difficulty
-    - questionFrontendId
-    - topicTags
-    """
     query = {
-        "query": """query ($slug: String!) {
+        "query": """
+        query ($slug: String!) {
           question(titleSlug: $slug) {
             title
             difficulty
             questionFrontendId
             topicTags { name slug }
           }
-        }""",
+        }
+        """,
         "variables": {"slug": slug}
     }
 
@@ -50,12 +41,11 @@ def get_problem_data(slug):
         tags = [t["name"].replace(" ", "_") for t in q["topicTags"]]
 
         return title, diff, qid, tags
-
     except Exception as e:
         debug(f"⚠️ Failed to fetch tags for {slug}: {e}")
         return slug, "Unknown", "0000", ["Uncategorized"]
 
-def copy_update(src, dest):
+def safe_copy(src, dest):
     if os.path.exists(dest):
         shutil.rmtree(dest)
     shutil.copytree(src, dest)
@@ -91,18 +81,18 @@ def process_problem(root_path, folder, stats, topics_count, unique_slugs):
 
     title, difficulty, qid, tags = get_problem_data(slug)
 
-    # Count difficulty once per problem
+    # Count difficulty only once per unique problem
     if slug not in unique_slugs:
         unique_slugs.add(slug)
         stats[difficulty] = stats.get(difficulty, 0) + 1
 
-    # Copy to topic folders
+    # Organize into topic → difficulty → folder
     for tag in tags:
         target = os.path.join(BASE_DIR, tag, difficulty, folder)
         os.makedirs(os.path.dirname(target), exist_ok=True)
-        copy_update(full_path, target)
-        add_to_topic_readme(tag, title, qid, slug, difficulty)
+        safe_copy(full_path, target)
 
+        add_to_topic_readme(tag, title, qid, slug, difficulty)
         topics_count[tag] = topics_count.get(tag, 0) + 1
 
     debug(f"✔️ Organized into: {tags}")
@@ -115,44 +105,34 @@ stats = {"Easy": 0, "Medium": 0, "Hard": 0}
 topics_count = {}
 unique_slugs = set()
 
-# 1️⃣ PROCESS ANY PROBLEM FOLDER FROM ANYWHERE
 ALL_FOLDERS = []
 
-# Root level
-for folder in os.listdir("."):
-    if os.path.isdir(folder) and is_problem_folder(folder):
-        ALL_FOLDERS.append((".", folder))
+# 1️⃣ Collect problem folders from anywhere
+for root, dirs, files in os.walk(".", topdown=True):
+    # Skip organized folders to avoid recursion copying
+    if root.startswith(f"./{BASE_DIR}/"):
+        # allow only root of LeetCode, not subtopics
+        parts = root.split("/")
+        if len(parts) > 3:
+            continue
 
-# Under LeetCode root
-for folder in os.listdir(BASE_DIR):
-    path = os.path.join(BASE_DIR, folder)
-    if os.path.isdir(path) and is_problem_folder(folder):
-        ALL_FOLDERS.append((BASE_DIR, folder))
-
-# LeetHub default structure (fallback compatibility)
-for diff in ["Easy", "Medium", "Hard"]:
-    diff_path = os.path.join(BASE_DIR, diff)
-    if os.path.isdir(diff_path):
-        for folder in os.listdir(diff_path):
-            if is_problem_folder(folder):
-                ALL_FOLDERS.append((diff_path, folder))
+    for folder in dirs:
+        if is_problem_folder(folder):
+            ALL_FOLDERS.append((root, folder))
 
 debug(f"Found {len(ALL_FOLDERS)} problem folders")
 
-# Process each folder
+# 2️⃣ Process each folder
 for root_path, folder in ALL_FOLDERS:
     process_problem(root_path, folder, stats, topics_count, unique_slugs)
 
-    # Clean the original folder
-    shutil.rmtree(os.path.join(root_path, folder))
+# 3️⃣ Clean original problem folders ONLY if safe
+for root_path, folder in ALL_FOLDERS:
+    full = os.path.join(root_path, folder)
+    if os.path.exists(full):
+        shutil.rmtree(full)
 
-# 2️⃣ CLEAN UP old LeetHub folders
-for diff in ["Easy", "Medium", "Hard"]:
-    p = os.path.join(BASE_DIR, diff)
-    if os.path.isdir(p):
-        shutil.rmtree(p)
-
-# 3️⃣ WRITE MASTER README
+# 4️⃣ Generate master README
 master = os.path.join(BASE_DIR, "README.md")
 total = sum(stats.values())
 updated_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
