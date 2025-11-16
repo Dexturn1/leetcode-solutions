@@ -1,47 +1,26 @@
-# 🚀 LeetCode Solutions
+# 🧠 LeetCode Auto Tracker
 
-![Repo Size](https://img.shields.io/github/repo-size/Dexturn1/leetcode-solutions?color=blue&label=Repo%20Size&style=flat-square)
-![Solved Problems](https://img.shields.io/badge/Solved-17-blue?style=flat-square&logo=leetcode)
-![Easy](https://img.shields.io/badge/Easy-1-brightgreen?style=flat-square)
-![Medium](https://img.shields.io/badge/Medium-28-yellow?style=flat-square)
-![Hard](https://img.shields.io/badge/Hard-5-red?style=flat-square)
-![Daily Streak](https://img.shields.io/badge/Daily%20Streak🔥-Active-orange?style=flat-square)
+![Solved](https://img.shields.io/badge/Solved-7-blue)
+![Easy](https://img.shields.io/badge/Easy-4-green)
+![Medium](https://img.shields.io/badge/Medium-1-orange)
+![Hard](https://img.shields.io/badge/Hard-2-red)
+![Updated](https://img.shields.io/badge/Updated-2025-11-16%2008:42%20UTC-grey)
 
-![Difficulty Distribution](./stats.png)
+## 📂 Topics Breakdown
+| Topic | Problems | Link |
+|-------|-----------|------|
+| Array | 3 | [Array](./Array/README.md) |
+| Backtracking | 2 | [Backtracking](./Backtracking/README.md) |
+| Breadth-First Search | 1 | [Breadth-First_Search](./Breadth-First_Search/README.md) |
+| Depth-First Search | 1 | [Depth-First_Search](./Depth-First_Search/README.md) |
+| Dynamic Programming | 1 | [Dynamic_Programming](./Dynamic_Programming/README.md) |
+| Hash Table | 2 | [Hash_Table](./Hash_Table/README.md) |
+| Math | 2 | [Math](./Math/README.md) |
+| Matrix | 2 | [Matrix](./Matrix/README.md) |
+| Memoization | 1 | [Memoization](./Memoization/README.md) |
+| Sliding Window | 1 | [Sliding_Window](./Sliding_Window/README.md) |
+| String | 2 | [String](./String/README.md) |
+| String Matching | 1 | [String_Matching](./String_Matching/README.md) |
+| Two Pointers | 1 | [Two_Pointers](./Two_Pointers/README.md) |
 
-### 🧮 Overall Progress
-`█░░░░░░░░░░` **0%** (17 / 2800 problems)
-🕓 Last Updated: **12 Nov 2025, 04:26 PM**
-
-## 📊 Difficulty Breakdown
-
-| Difficulty | Count | Badge |
-|-------------|--------|--------|
-| 🟢 Easy | 1 | ![Easy](https://img.shields.io/badge/Easy-1-brightgreen?style=flat-square) |
-| 🟡 Medium | 28 | ![Medium](https://img.shields.io/badge/Medium-28-yellow?style=flat-square) |
-| 🔴 Hard | 5 | ![Hard](https://img.shields.io/badge/Hard-5-red?style=flat-square) |
-
-## 🏆 Achievements
-
-- 🧠 **Most Solved Tag:** Arrays & Strings
-- ⚡ **Fastest Growth Week:** Week 46, 2025
-- 🏅 **Rank Progress:** Bronze → Silver → 🥇 Gold (in progress)
-
-## 🗂️ Topic-wise Count
-
-| Topic | Problems Solved |
-|--------|----------------|
-| Array | 3 |
-| Backtracking | 4 |
-| Bit_Manipulation | 1 |
-| Dynamic_Programming | 2 |
-| Hash_Table | 2 |
-| Sliding_Window | 2 |
-| Sorting | 0 |
-| String | 3 |
-| Two_Pointers | 0 |
-
----
-💡 *Auto-generated with ❤️ by GitHub Actions on every push!*
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Dexturn1&theme=react&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
+_Last updated on **2025-11-16 08:42 UTC**_

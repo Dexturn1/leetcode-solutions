@@ -4,3 +4,5 @@
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens/) | Hard |
 | 904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | Medium |
 | 18 | [4Sum](https://leetcode.com/problems/4sum/) | Medium |
+| 733 | [Flood Fill](https://leetcode.com/problems/flood-fill/) | Easy |
+| 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | Hard |
