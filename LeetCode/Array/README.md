@@ -7,3 +7,4 @@
 | 733 | [Flood Fill](https://leetcode.com/problems/flood-fill/) | Easy |
 | 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | Hard |
 | 455 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | Easy |
+| 860 | [Lemonade Change](https://leetcode.com/problems/lemonade-change/) | Easy |
