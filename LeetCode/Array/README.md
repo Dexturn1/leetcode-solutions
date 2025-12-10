@@ -8,3 +8,4 @@
 | 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | Hard |
 | 455 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | Easy |
 | 860 | [Lemonade Change](https://leetcode.com/problems/lemonade-change/) | Easy |
+| 55 | [Jump Game](https://leetcode.com/problems/jump-game/) | Medium |
