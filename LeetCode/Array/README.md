@@ -11,3 +11,5 @@
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game/) | Medium |
 | 135 | [Candy](https://leetcode.com/problems/candy/) | Hard |
 | 57 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | Medium |
+| 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium |
+| 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium |
