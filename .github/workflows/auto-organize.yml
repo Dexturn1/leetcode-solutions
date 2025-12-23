@@ -1,12 +1,16 @@
 name: LeetCode Organizer Premium ✨
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: leetcode-organizer
+  cancel-in-progress: true
 
 jobs:
   organize:
@@ -36,23 +40,17 @@ jobs:
 
       - name: Commit Organized Structure Safely
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          echo "🔄 Fetching latest main..."
           git fetch origin main
-
-          echo "📌 Rebasing on latest main..."
           git rebase origin/main || git rebase --abort
 
-          if git diff --quiet; then
-            echo "✅ No changes to commit"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
             exit 0
           fi
 
-          echo "📝 Committing changes..."
-          git add .
           git commit -m "🚀 Auto-Organized LeetCode solutions"
-
-          echo "⬆️ Pushing safely..."
           git push origin main
