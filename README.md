@@ -14,13 +14,13 @@
 
 ## Overview
 
-This repository contains my **LeetCode problem solutions**, organized for clarity, consistency, and long-term learning.
+This repository contains my **LeetCode problem solutions**, organized for clarity, consistency, and long-term improvement.
 
-The main objectives are:
+The purpose of this repository is to:
 
 * Strengthen problem-solving skills
 * Practice Data Structures & Algorithms
-* Track progress automatically
+* Track daily coding progress
 * Prepare for technical interviews
 
 ---
@@ -28,10 +28,8 @@ The main objectives are:
 ## Live LeetCode Statistics
 
 <p align="center">
-  <img src="https://leetcard.jacoblin.cool/Dexturn1?theme=dark&font=Karma&ext=heatmap" />
+  <img src="https://leetcard.jacoblin.cool/dexturn?theme=dark&font=Karma&ext=heatmap" />
 </p>
-
-> This card updates automatically using LeetCode public data.
 
 ---
 
@@ -72,7 +70,7 @@ leetcode-solutions/
 
 ## Automation
 
-This repository automatically reflects progress using **LeetCode’s public stats API**, so manual updates are not required.
+This repository automatically reflects progress using **LeetCode’s public stats API**, so no manual updates are required.
 
 ---
 
@@ -83,11 +81,9 @@ GitHub: [https://github.com/Dexturn1](https://github.com/Dexturn1)
 
 ---
 
-If you want next, I can:
+* Difficulty-wise breakdown (Easy / Medium / Hard)
+* GitHub profile README version
+* Weekly activity tracker
+* Cleaner minimalist version
 
-* Add difficulty-wise counters (Easy / Medium / Hard)
-* Create a GitHub profile README using this design
-* Add weekly progress tracking
-* Add animated contribution graphs
-
-Just tell me what you want next.
+Just tell me what you want to add next.
