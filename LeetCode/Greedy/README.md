@@ -6,3 +6,4 @@
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game/) | Medium |
 | 135 | [Candy](https://leetcode.com/problems/candy/) | Hard |
 | 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium |
+| 1903 | [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | Easy |
