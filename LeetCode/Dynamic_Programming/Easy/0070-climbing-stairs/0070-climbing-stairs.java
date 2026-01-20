@@ -1,24 +1,17 @@
 class Solution {
     public int climbStairs(int n) {
-        int[] hash = new int[n+1];
-        Arrays.fill(hash, -1);
-        return solve(n, hash); 
+        int []dp = new int[n+1];
+        Arrays.fill(dp,-1);
+        return solve(n, dp);
     }
 
-    public int solve(int n, int[] hash){
-        if(n < 0){
-            return 0;
-        }
-        if(n == 0){
-            return 1;
-        }
+    private int solve(int i, int[]dp) {
+        if (i == 0 || i == 1) return 1;
 
-        if(hash[n] !=-1){
-            return hash[n];
-        }
+        if(dp[i] != -1) return dp[i];
 
-        return hash[n] = solve(n-1, hash) + solve(n-2,hash);
-        
+        dp[i] = solve(i - 1,dp) + solve(i - 2,dp);
+        return dp[i];
     }
-
 }
+
