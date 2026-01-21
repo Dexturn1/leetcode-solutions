@@ -1,42 +1,29 @@
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        int initicalColor = image[sr][sc];
-
-        if(initicalColor == color){
-            return image;
-        }
-
-        int [][]ans = new int[image.length][image[0].length];
-        for(int i = 0 ; i < image.length; i++){
-            for(int j = 0; j< image[0].length; j++){
-                ans[i][j] = image[i][j];
-            }
-        }
-
-        dfs(sr, sc , ans, image, color, initicalColor);
+        int iniColor = image[sr][sc]; 
+        int [][]ans  = image;
+        int [] delRow = {-1,0,1,0};
+        int [] delCol = {0,1,0,-1};
+        dfs(image, ans, delRow, delCol, sr, sc, iniColor, color);
         return ans;
     }
 
+    public void dfs(int[][] image,int [][]ans,int[] delRow, int[]delCol,int sr, int sc, int iniColor, int color){
+        ans[sr][sc] = color;
+        int n = image.length;
+        int m = image[0].length;
+        for(int i=0; i<4; i++){
+            int nrow = sr + delRow[i];
+            int ncol = sc + delCol[i];
 
-    private void dfs(int r, int c, int [][]ans, int[][] image, int color, int initialColor){
-        ans[r][c] = color;
-
-        //  4 directional movement
-        int [] delRow = {-1, 0, 1 , 0};
-        int [] delCol = {0, 1, 0, -1 };
-
-        for(int i = 0; i < 4; i++){
-            int nRow = r + delRow[i];
-            int nCol = c + delCol[i];
-
-            //  check for boundries + same initial color+ not already painted
-            if(nRow >= 0 && nRow < image.length && nCol >= 0 && nCol < image[0].length &&
-                image[nRow][nCol] == initialColor && ans[nRow][nCol] != color){
-                    dfs(nRow, nCol, ans, image, color, initialColor);
-                }
- 
-
-        }
+            if(nrow>=0 && nrow < n && ncol>=0 && ncol<m && image[nrow][ncol] == iniColor && ans[nrow][ncol] != color){
+                dfs(image, ans, delRow, delCol, nrow, ncol, iniColor, color);
+            }
+            
+        } 
 
     }
+
+
+
 }
