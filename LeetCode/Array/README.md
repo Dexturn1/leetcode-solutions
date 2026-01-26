@@ -27,3 +27,6 @@
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard |
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium |
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | Medium |
+| 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | Medium |
+| 1020 | [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | Medium |
+| 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium |

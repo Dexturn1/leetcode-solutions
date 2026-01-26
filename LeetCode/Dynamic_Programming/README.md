@@ -6,3 +6,4 @@
 | 678 | [Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/) | Medium |
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game/) | Medium |
 | 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium |
+| 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium |
