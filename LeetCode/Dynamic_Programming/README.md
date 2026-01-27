@@ -7,3 +7,5 @@
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game/) | Medium |
 | 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium |
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium |
+| 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | Medium |
+| 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium |

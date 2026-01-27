@@ -30,3 +30,5 @@
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | Medium |
 | 1020 | [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/) | Medium |
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium |
+| 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | Medium |
+| 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium |
