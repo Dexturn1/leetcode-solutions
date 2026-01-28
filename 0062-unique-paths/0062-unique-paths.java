@@ -12,6 +12,7 @@ class Solution {
             return 1;
         }
 
+       
             return dp[row][col] = solve(row - 1, col, dp) + solve(row, col -1, dp); 
     
     }
