@@ -9,3 +9,6 @@
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium |
 | 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | Medium |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium |
+| 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | Medium |
+| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | Medium |
+| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | Medium |
