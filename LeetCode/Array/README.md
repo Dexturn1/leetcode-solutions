@@ -34,3 +34,4 @@
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium |
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | Medium |
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | Medium |
+| 120 | [Triangle](https://leetcode.com/problems/triangle/) | Medium |

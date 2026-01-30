@@ -12,3 +12,4 @@
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | Medium |
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | Medium |
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | Medium |
+| 120 | [Triangle](https://leetcode.com/problems/triangle/) | Medium |
