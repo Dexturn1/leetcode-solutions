@@ -9,3 +9,4 @@
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium |
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | Medium |
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | Medium |
+| 931 | [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/) | Medium |
