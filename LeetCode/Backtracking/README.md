@@ -5,3 +5,4 @@
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Medium |
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens/) | Hard |
 | 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | Hard |
+| 494 | [Target Sum](https://leetcode.com/problems/target-sum/) | Medium |
