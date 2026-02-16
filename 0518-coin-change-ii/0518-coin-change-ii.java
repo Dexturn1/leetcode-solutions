@@ -1,22 +1,23 @@
 class Solution {
     public int change(int amount, int[] coins) {
         int n = coins.length;
-        Arrays.sort(coins);
-        return solve(n-1,amount , coins);
-    }
+        int [][]dp = new int[n][amount+1];
 
-    public int solve(int index, int amount, int []coins){
-        if(amount == 0)return 1;
-         if (index == 0) {
-            return amount % coins[0] == 0 ? 1 : 0;
+        for(int i = 0; i<=amount ; i++){
+            if(i % coins[0] ==0) dp[0][i] = 1;
         }
         
-        int notPick = solve(index-1, amount, coins);
-        int pick = 0;
-            if(amount >= coins[index]){
-                pick = solve(index, amount - coins[index], coins);
+        for(int i = 1; i<n; i++){
+            for(int j = 0; j<=amount; j++){
+                int pick = dp[i-1][j];
+                int notPick = 0;
+                if(coins[i] <= j){
+                    notPick = dp[i][j - coins[i]];
+                }
+                dp[i][j] = notPick + pick;
             }
-
-        return pick + notPick;
+        }
+        return dp[n - 1][amount];
+        
     }
 }
