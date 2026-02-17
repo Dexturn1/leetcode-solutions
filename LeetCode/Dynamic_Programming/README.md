@@ -17,3 +17,5 @@
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | Medium |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium |
 | 494 | [Target Sum](https://leetcode.com/problems/target-sum/) | Medium |
+| 518 | [Coin Change II](https://leetcode.com/problems/coin-change-ii/) | Medium |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy |
