@@ -8,19 +8,25 @@ class Solution {
             arr[i+1] = nums[i];
         }
 
-        return solve(1, m, arr);
+        int [][]dp = new int[m+2][m+2];
+
+        for(int []row: dp) Arrays.fill(row, -1); 
+
+        return solve(1, m, arr,dp);
     }
 
-    int solve(int i, int j, int[] arr){
+    int solve(int i, int j, int[] arr, int dp[][]){
         if(i > j) return 0;
+
+        if(dp[i][j] != -1) return dp[i][j];
 
         int max = Integer.MIN_VALUE; 
         for(int ind = i; ind <= j; ind++){
-            int cost = arr[ind] * arr[i-1] * arr[j+1] + solve(i, ind-1, arr) + solve(ind+1, j, arr);
+            int cost = arr[ind] * arr[i-1] * arr[j+1] + solve(i, ind-1, arr, dp) + solve(ind+1, j, arr,dp);
             max = Math.max(max, cost);
         }
 
-        return max;
+        return dp[i][j] = max;
     
     }
 }
