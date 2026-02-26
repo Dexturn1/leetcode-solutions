@@ -9,3 +9,6 @@
 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | Medium |
 | 1903 | [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | Easy |
 | 1021 | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/) | Easy |
+| 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | Easy |
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy |
+| 796 | [Rotate String](https://leetcode.com/problems/rotate-string/) | Easy |

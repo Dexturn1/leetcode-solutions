@@ -7,3 +7,4 @@
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | Medium |
 | 368 | [Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/) | Medium |
 | 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard |
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy |
