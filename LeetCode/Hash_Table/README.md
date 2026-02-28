@@ -7,3 +7,4 @@
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | Medium |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | Easy |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy |

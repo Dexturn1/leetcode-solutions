@@ -12,3 +12,4 @@
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | Easy |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy |
 | 796 | [Rotate String](https://leetcode.com/problems/rotate-string/) | Easy |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy |
