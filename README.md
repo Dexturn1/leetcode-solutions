@@ -87,3 +87,11 @@ GitHub: [https://github.com/Dexturn1](https://github.com/Dexturn1)
 * Cleaner minimalist version
 
 Just tell me what you want to add next.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1752-check-if-array-is-sorted-and-rotated](https://github.com/Dexturn1/leetcode-solutions/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
+<!---LeetCode Topics End-->
