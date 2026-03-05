@@ -96,6 +96,7 @@ Just tell me what you want to add next.
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 | [0283-move-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0283-move-zeroes/) | Easy |
+| [0485-max-consecutive-ones](https://github.com/Dexturn1/leetcode-solutions/tree/main/0485-max-consecutive-ones/) | Easy |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Dexturn1/leetcode-solutions/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
