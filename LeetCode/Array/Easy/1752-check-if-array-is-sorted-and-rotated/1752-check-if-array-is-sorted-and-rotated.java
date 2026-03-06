@@ -1,18 +1,14 @@
 class Solution {
     public boolean check(int[] nums) {
-        int n = nums.length;
-        int count = 0;
+        int x = 0;
+      for(int i = 0; i<nums.length-1; i++){
+            if(nums[i] > nums[i+1]) 
+                x++;
+      }
 
-        for (int i = 0; i < n - 1; i++) {
-            if (nums[i] > nums[i + 1]) {
-                count++;
-            }
-        }
+      if(x == 0 ) return true;
+      if(x >= 2) return false;
 
-        if (nums[n - 1] > nums[0]) {
-            count++;
-        }
-
-        return count <= 1;
+      return nums[nums.length-1] <= nums[0] ? true : false; 
     }
 }

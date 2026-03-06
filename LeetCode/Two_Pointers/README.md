@@ -9,3 +9,6 @@
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Easy |
 | 2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | Medium |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | Medium |
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy |
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Medium |

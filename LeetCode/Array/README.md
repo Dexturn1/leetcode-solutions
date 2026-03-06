@@ -48,3 +48,7 @@
 | 714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard |
 | 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard |
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy |
+| 485 | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | Easy |
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Medium |
