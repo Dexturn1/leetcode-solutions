@@ -95,6 +95,7 @@ Just tell me what you want to add next.
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0001-two-sum/) | Easy |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0075-sort-colors](https://github.com/Dexturn1/leetcode-solutions/tree/main/0075-sort-colors/) | Medium |
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 | [0283-move-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0283-move-zeroes/) | Easy |
 | [0485-max-consecutive-ones](https://github.com/Dexturn1/leetcode-solutions/tree/main/0485-max-consecutive-ones/) | Easy |
@@ -103,6 +104,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
+| [0075-sort-colors](https://github.com/Dexturn1/leetcode-solutions/tree/main/0075-sort-colors/) | Medium |
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 | [0283-move-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0283-move-zeroes/) | Easy |
 ## Math
@@ -113,4 +115,8 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0001-two-sum/) | Easy |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/Dexturn1/leetcode-solutions/tree/main/0075-sort-colors/) | Medium |
 <!---LeetCode Topics End-->
