@@ -52,3 +52,6 @@
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Easy |
 | 485 | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | Easy |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Medium |
+| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | Medium |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy |
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy |
