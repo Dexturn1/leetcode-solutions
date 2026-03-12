@@ -26,3 +26,4 @@
 | 714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard |
 | 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard |
+| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium |

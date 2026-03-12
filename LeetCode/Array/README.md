@@ -55,3 +55,5 @@
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | Medium |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy |
+| 2149 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | Medium |
+| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium |
