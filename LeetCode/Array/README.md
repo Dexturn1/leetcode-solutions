@@ -57,3 +57,4 @@
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy |
 | 2149 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | Medium |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium |
+| 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | Medium |

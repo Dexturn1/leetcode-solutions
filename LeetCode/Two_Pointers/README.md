@@ -14,3 +14,4 @@
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Medium |
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | Medium |
 | 2149 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | Medium |
+| 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | Medium |
