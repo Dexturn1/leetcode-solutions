@@ -10,3 +10,5 @@
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy |
+| 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium |
+| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |

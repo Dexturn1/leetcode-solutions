@@ -58,3 +58,5 @@
 | 2149 | [Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | Medium |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | Medium |
+| 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium |
+| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
