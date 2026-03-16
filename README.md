@@ -104,6 +104,7 @@ Just tell me what you want to add next.
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0169-majority-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0169-majority-element/) | Easy |
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
+| [0229-majority-element-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0229-majority-element-ii/) | Medium |
 | [0283-move-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0283-move-zeroes/) | Easy |
 | [0485-max-consecutive-ones](https://github.com/Dexturn1/leetcode-solutions/tree/main/0485-max-consecutive-ones/) | Easy |
 | [0560-subarray-sum-equals-k](https://github.com/Dexturn1/leetcode-solutions/tree/main/0560-subarray-sum-equals-k/) | Medium |
@@ -129,12 +130,14 @@ Just tell me what you want to add next.
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0169-majority-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0169-majority-element/) | Easy |
+| [0229-majority-element-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0229-majority-element-ii/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Dexturn1/leetcode-solutions/tree/main/0560-subarray-sum-equals-k/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0075-sort-colors](https://github.com/Dexturn1/leetcode-solutions/tree/main/0075-sort-colors/) | Medium |
 | [0169-majority-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0169-majority-element/) | Easy |
+| [0229-majority-element-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0229-majority-element-ii/) | Medium |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -144,6 +147,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0169-majority-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0169-majority-element/) | Easy |
+| [0229-majority-element-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0229-majority-element-ii/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
