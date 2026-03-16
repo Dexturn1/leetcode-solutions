@@ -30,7 +30,7 @@ class Solution {
         for(int num:nums){
             if(num == candidate1) count1++;
 
-            if(num == candidate2)count2++;
+            else if(num == candidate2)count2++;
         }
 
         List<Integer> ans = new ArrayList<>();
