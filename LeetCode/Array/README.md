@@ -60,3 +60,5 @@
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | Medium |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
+| 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium |
+| 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Easy |

@@ -27,3 +27,4 @@
 | 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard |
 | 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium |
+| 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Easy |
