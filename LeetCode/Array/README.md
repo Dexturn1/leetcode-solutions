@@ -62,3 +62,5 @@
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Medium |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Easy |
+| 15 | [3Sum](https://leetcode.com/problems/3sum/) | Medium |
+| 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | Medium |
