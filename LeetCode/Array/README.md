@@ -64,3 +64,4 @@
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Easy |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | Medium |
 | 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | Medium |
+| 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium |
