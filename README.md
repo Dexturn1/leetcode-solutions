@@ -102,6 +102,7 @@ Just tell me what you want to add next.
 | [0053-maximum-subarray](https://github.com/Dexturn1/leetcode-solutions/tree/main/0053-maximum-subarray/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0075-sort-colors](https://github.com/Dexturn1/leetcode-solutions/tree/main/0075-sort-colors/) | Medium |
+| [0088-merge-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0088-merge-sorted-array/) | Easy |
 | [0118-pascals-triangle](https://github.com/Dexturn1/leetcode-solutions/tree/main/0118-pascals-triangle/) | Easy |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Dexturn1/leetcode-solutions/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
@@ -121,6 +122,7 @@ Just tell me what you want to add next.
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0026-remove-duplicates-from-sorted-array/) | Easy |
 | [0031-next-permutation](https://github.com/Dexturn1/leetcode-solutions/tree/main/0031-next-permutation/) | Medium |
 | [0075-sort-colors](https://github.com/Dexturn1/leetcode-solutions/tree/main/0075-sort-colors/) | Medium |
+| [0088-merge-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0088-merge-sorted-array/) | Easy |
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 | [0283-move-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0283-move-zeroes/) | Easy |
 | [2149-rearrange-array-elements-by-sign](https://github.com/Dexturn1/leetcode-solutions/tree/main/2149-rearrange-array-elements-by-sign/) | Medium |
@@ -144,6 +146,7 @@ Just tell me what you want to add next.
 | [0015-3sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0015-3sum/) | Medium |
 | [0018-4sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0018-4sum/) | Medium |
 | [0075-sort-colors](https://github.com/Dexturn1/leetcode-solutions/tree/main/0075-sort-colors/) | Medium |
+| [0088-merge-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0088-merge-sorted-array/) | Easy |
 | [0169-majority-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0169-majority-element/) | Easy |
 | [0229-majority-element-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0229-majority-element-ii/) | Medium |
 ## Divide and Conquer
