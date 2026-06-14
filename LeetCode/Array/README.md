@@ -66,3 +66,4 @@
 | 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | Medium |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy |
+| 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Medium |
