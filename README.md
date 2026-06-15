@@ -128,6 +128,7 @@ Just tell me what you want to add next.
 | [0088-merge-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0088-merge-sorted-array/) | Easy |
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 | [0283-move-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0283-move-zeroes/) | Easy |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 | [2149-rearrange-array-elements-by-sign](https://github.com/Dexturn1/leetcode-solutions/tree/main/2149-rearrange-array-elements-by-sign/) | Medium |
 ## Math
 | Problem Name | Difficulty |
@@ -191,4 +192,8 @@ Just tell me what you want to add next.
 | ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 <!---LeetCode Topics End-->
