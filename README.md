@@ -136,6 +136,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/Dexturn1/leetcode-solutions/tree/main/0048-rotate-image/) | Medium |
+| [0069-sqrtx](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0069-sqrtx/) | Easy |
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -193,6 +194,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
+| [0069-sqrtx](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0069-sqrtx/) | Easy |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0162-find-peak-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0162-find-peak-element/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
