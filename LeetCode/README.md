@@ -1,15 +1,17 @@
 # 🧠 LeetCode Auto Tracker
 
-![Solved](https://img.shields.io/badge/Solved-2-blue)
+![Solved](https://img.shields.io/badge/Solved-3-blue)
 ![Easy](https://img.shields.io/badge/Easy-0-green)
-![Medium](https://img.shields.io/badge/Medium-2-orange)
+![Medium](https://img.shields.io/badge/Medium-3-orange)
 ![Hard](https://img.shields.io/badge/Hard-0-red)
-![Updated](https://img.shields.io/badge/Updated-2026-06-15%2002:46%20UTC-grey)
+![Updated](https://img.shields.io/badge/Updated-2026-06-16%2002:48%20UTC-grey)
 
 ## 📂 Topics Breakdown
 | Topic | Problems | Link |
 |-------|-----------|------|
 | Array | 2 | [Array](./Array/README.md) |
 | Binary Search | 2 | [Binary_Search](./Binary_Search/README.md) |
+| Linked List | 1 | [Linked_List](./Linked_List/README.md) |
+| Two Pointers | 1 | [Two_Pointers](./Two_Pointers/README.md) |
 
-_Last updated on **2026-06-15 02:46 UTC**_
+_Last updated on **2026-06-16 02:48 UTC**_
