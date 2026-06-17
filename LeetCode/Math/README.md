@@ -8,3 +8,4 @@
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Medium |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium |
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Easy |
