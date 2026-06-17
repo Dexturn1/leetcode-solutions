@@ -177,6 +177,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2149-rearrange-array-elements-by-sign](https://github.com/Dexturn1/leetcode-solutions/tree/main/2149-rearrange-array-elements-by-sign/) | Medium |
+| [3614-process-string-with-special-operations-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/3614-process-string-with-special-operations-ii/) | Hard |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -202,4 +203,8 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3614-process-string-with-special-operations-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/3614-process-string-with-special-operations-ii/) | Hard |
 <!---LeetCode Topics End-->
