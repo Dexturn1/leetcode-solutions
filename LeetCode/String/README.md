@@ -14,3 +14,4 @@
 | 796 | [Rotate String](https://leetcode.com/problems/rotate-string/) | Easy |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy |
 | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | Medium |
+| 3614 | [Process String with Special Operations II](https://leetcode.com/problems/process-string-with-special-operations-ii/) | Hard |
