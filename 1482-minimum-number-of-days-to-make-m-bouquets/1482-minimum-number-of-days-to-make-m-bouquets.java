@@ -1,47 +1,50 @@
 class Solution {
-    public int minDays(int[] bloomDay, int m, int k) {
-        int low = 1;
-        int high = getMax(bloomDay);
-        int ans = -1;
 
-        if( m * k > bloomDay.length) return -1;
-        while(low <= high ){
-            int mid = low + ( high - low) /2;
-
-            if(canBloom(bloomDay, m, k, mid)){
-                high = mid - 1;
-                ans = mid;
-            }else{
-                low = mid + 1;
-            }
-        }
-        return ans;
-    }
-
-    boolean canBloom(int []bloomsday, int m, int k, int mid){
-        int count = 0;
+    public boolean canMake(int[] bloomDay, int m, int k, int day) {
         int bouquets = 0;
-        for(int i = 0; i< bloomsday.length; i++){
-            if(bloomsday[i] <= mid){
-                count++;
-            }else{
-                count = 0;
-            }
+        int flowers = 0;
 
-            if(count ==  k){
-                bouquets++;
-                count = 0;
-                if(bouquets == m)return true;
+        for (int bloom : bloomDay) {
+            if (bloom <= day) {
+                flowers++;
+                if (flowers == k) {
+                    bouquets++;
+                    flowers = 0;
+                }
+            } else {
+                flowers = 0;
             }
-        } 
-        return false;
-    }
-    
-    int getMax(int []arr){
-        int max = 0;
-        for(int i: arr){
-            max = Math.max(max, i);
         }
-        return max;
+        return bouquets >= m;
+    }
+
+    public int minDays(int[] bloomDay, int m, int k) {
+        int n = bloomDay.length;
+
+        // Impossible case
+        if ((long) m * k > n) return -1;
+
+        int low = Integer.MAX_VALUE;
+        int high = Integer.MIN_VALUE;
+
+        for (int day : bloomDay) {
+            low = Math.min(low, day);
+            high = Math.max(high, day);
+        }
+
+        int answer = -1;
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if (canMake(bloomDay, m, k, mid)) {
+                answer = mid;      // possible, try smaller
+                high = mid - 1;
+            } else {
+                low = mid + 1;     // need more days
+            }
+        }
+
+        return answer;
     }
 }
