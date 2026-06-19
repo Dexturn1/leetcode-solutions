@@ -1,34 +1,36 @@
 class Solution {
     public int smallestDivisor(int[] nums, int threshold) {
-        int low = 1;
-        int high = Integer.MIN_VALUE;
-        for(int i: nums){
-            high = Math.max(high,i);
-        }
 
-        int ans = 1;
-        while(low <= high){
-            int mid =(low+high)/2;
-            if(underthreshold(nums,threshold, mid)){
+        int low = 1;
+        int high = getMax(nums);
+        int ans = -1;
+
+        while(low<= high){
+            int mid = low + (high - low )/2;
+
+            if(isValid(nums, threshold, mid)){
+                high = mid - 1;
                 ans = mid;
-                high = mid-1;
-            }
-            else{
-                low = mid+1;
+            }else{
+                low = mid + 1;
             }
         }
         return ans;
     }
-    public boolean underthreshold(int[]arr, int threshold, int mid){
+
+    boolean isValid(int []nums, int  threshold, int divisor){
         int sum = 0;
-
-        for(int i: arr){
-            sum += (i + mid - 1) / mid;
-
-            if(sum>threshold){
-                return false;
-            }
+        for(int i = 0; i< nums.length; i++){
+            sum += (nums[i] + divisor - 1)/divisor;
+            if(sum > threshold) return false;
         }
         return true;
+    }
+    int getMax(int [] arr){
+        int max = 0 ;
+        for(int i : arr){
+            max = Math.max(max, i);
+        }
+        return max;
     }
 }
