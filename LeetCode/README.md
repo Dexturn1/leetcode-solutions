@@ -4,7 +4,7 @@
 ![Easy](https://img.shields.io/badge/Easy-0-green)
 ![Medium](https://img.shields.io/badge/Medium-0-orange)
 ![Hard](https://img.shields.io/badge/Hard-1-red)
-![Updated](https://img.shields.io/badge/Updated-2026-06-21%2002:45%20UTC-grey)
+![Updated](https://img.shields.io/badge/Updated-2026-06-22%2002:47%20UTC-grey)
 
 ## 📂 Topics Breakdown
 | Topic | Problems | Link |
@@ -13,4 +13,4 @@
 | Binary Search | 1 | [Binary_Search](./Binary_Search/README.md) |
 | Divide and Conquer | 1 | [Divide_and_Conquer](./Divide_and_Conquer/README.md) |
 
-_Last updated on **2026-06-21 02:45 UTC**_
+_Last updated on **2026-06-22 02:47 UTC**_
