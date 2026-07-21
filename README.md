@@ -133,6 +133,7 @@ Just tell me what you want to add next.
 | [0031-next-permutation](https://github.com/Dexturn1/leetcode-solutions/tree/main/0031-next-permutation/) | Medium |
 | [0075-sort-colors](https://github.com/Dexturn1/leetcode-solutions/tree/main/0075-sort-colors/) | Medium |
 | [0088-merge-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0088-merge-sorted-array/) | Easy |
+| [0141-linked-list-cycle](https://github.com/Dexturn1/leetcode-solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 | [0283-move-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0283-move-zeroes/) | Easy |
 | [0876-middle-of-the-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/0876-middle-of-the-linked-list/) | Easy |
@@ -150,6 +151,7 @@ Just tell me what you want to add next.
 | [0001-two-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0001-two-sum/) | Easy |
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0141-linked-list-cycle](https://github.com/Dexturn1/leetcode-solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [0169-majority-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0169-majority-element/) | Easy |
 | [0229-majority-element-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0229-majority-element-ii/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Dexturn1/leetcode-solutions/tree/main/0560-subarray-sum-equals-k/) | Medium |
@@ -214,6 +216,7 @@ Just tell me what you want to add next.
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0141-linked-list-cycle](https://github.com/Dexturn1/leetcode-solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [0206-reverse-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/0206-reverse-linked-list/) | Easy |
 | [0876-middle-of-the-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/0876-middle-of-the-linked-list/) | Easy |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
