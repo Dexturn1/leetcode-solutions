@@ -17,7 +17,7 @@ class Solution {
 
         ListNode firstHead = head;
         ListNode secondHead = reverse(middle(head));
-        while(firstHead != null && secondHead != null){
+        while(secondHead != null){
             if(firstHead.val != secondHead.val) return false;
             firstHead = firstHead.next;
             secondHead = secondHead.next;
