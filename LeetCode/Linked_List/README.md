@@ -6,3 +6,4 @@
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Easy |
 | 2095 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | Medium |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/) | Medium |
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy |

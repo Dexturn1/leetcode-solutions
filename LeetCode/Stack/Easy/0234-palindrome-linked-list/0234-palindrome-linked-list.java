@@ -10,24 +10,44 @@
  */
 class Solution {
     public boolean isPalindrome(ListNode head) {
-        Deque<ListNode> stack = new ArrayDeque<>();
 
-        ListNode p = head;
-        while(p!=null){
-            stack.push(p);
-            p=p.next;
-        }
-        
-        p = head;
-        while(p!=null){
-
-            if(p.val != stack.pop().val)
-                return false;
-
-            p = p.next;   
+       if (head == null || head.next == null) {
+            return true;
         }
 
+        ListNode firstHead = head;
+        ListNode secondHead = reverse(middle(head));
+        while(secondHead != null){
+            if(firstHead.val != secondHead.val) return false;
+            firstHead = firstHead.next;
+            secondHead = secondHead.next;
+        }
         return true;
+    }
 
+    public ListNode reverse(ListNode head){
+        if(head == null || head.next == null){
+            return head;
+        }
+        ListNode newHead = reverse(head.next);
+        head.next.next = head;
+        head.next  = null; 
+        return newHead;
+    }
+
+
+    public ListNode middle(ListNode head){
+
+        if(head == null) return null;
+        if(head.next == null) return head;
+
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while(fast != null && fast.next!=null){
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
     }
 }

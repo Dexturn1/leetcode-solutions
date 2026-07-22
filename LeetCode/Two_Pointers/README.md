@@ -17,3 +17,4 @@
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | Medium |
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | Medium |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy |
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy |
