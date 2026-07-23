@@ -10,50 +10,51 @@
  */
 class Solution {
     public ListNode sortList(ListNode head) {
-          if (head == null || head.next == null)
-            return head;
 
-        // Find middle
-        ListNode mid = getMiddle(head);
-        ListNode rightHead = mid.next;
-        mid.next = null; // break list
+        if(head == null || head.next == null) return head;
 
+        ListNode mid = getMid(head);
+        ListNode l2 = mid.next;
+        mid.next = null;
+        
         ListNode left = sortList(head);
-        ListNode right = sortList(rightHead);
-
+        ListNode right = sortList(l2);
         return merge(left, right);
     }
-     private static ListNode getMiddle(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head.next;
 
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
+    public ListNode getMid(ListNode head){
+        ListNode fast = head.next;
+        ListNode slow = head;
+
+        while(fast!= null && fast.next!=null){
             fast = fast.next.next;
+            slow = slow.next;
         }
         return slow;
     }
-      private static ListNode merge(ListNode l1, ListNode l2) {
-        if (l1 == null) return l2;
-        if (l2 == null) return l1;
+
+    public ListNode merge(ListNode l1, ListNode l2){
+        if(l1 == null) return l2;
+        if(l2 == null) return l1;
 
         ListNode dummy = new ListNode(-1);
         ListNode temp = dummy;
 
-        while (l1 != null && l2 != null) {
-            if (l1.val <= l2.val) {
+        while(l1!= null && l2!=null){
+
+            if(l1.val < l2.val){
                 temp.next = l1;
                 l1 = l1.next;
-            } else {
+            }else{
                 temp.next = l2;
                 l2 = l2.next;
             }
             temp = temp.next;
-        }
+        }  
 
-        if (l1 != null) temp.next = l1;
-        if (l2 != null) temp.next = l2;
-
+        if(l1!=null)temp.next = l1;
+        if(l2!=null)temp.next = l2;
         return dummy.next;
     }
+
 }

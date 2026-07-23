@@ -9,20 +9,29 @@
  * }
  */
 class Solution {
-    public ListNode deleteMiddle(ListNode head) {
-        if(head == null || head.next == null) return null;
-        
-
+    public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode fast = head;
         ListNode slow = head;
-        ListNode prev = null;
 
-        while(fast!=null && fast.next != null){
-            prev = slow;
-            slow = slow.next;
-            fast = fast.next.next;
+        
+        for(int i = 0; i<n; i++){
+            fast = fast.next;
         }
-        prev.next = prev.next.next;
+
+
+        if(fast == null){
+            return head.next;
+        }
+
+        while(fast.next != null){
+            fast = fast.next;
+            slow = slow.next;
+        }
+
+        if(slow.next!=null){
+
+        slow.next = slow.next.next;}
+
         return head;
     }
 }
