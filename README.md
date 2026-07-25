@@ -149,6 +149,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/Dexturn1/leetcode-solutions/tree/main/0048-rotate-image/) | Medium |
+| [0050-powx-n](https://github.com/Dexturn1/leetcode-solutions/tree/main/0050-powx-n/) | Medium |
 | [0069-sqrtx](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0069-sqrtx/) | Easy |
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 ## Hash Table
@@ -245,6 +246,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0025-reverse-nodes-in-k-group](https://github.com/Dexturn1/leetcode-solutions/tree/main/0025-reverse-nodes-in-k-group/) | Hard |
+| [0050-powx-n](https://github.com/Dexturn1/leetcode-solutions/tree/main/0050-powx-n/) | Medium |
 | [0206-reverse-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/0206-reverse-linked-list/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/0234-palindrome-linked-list/) | Easy |
 ## Stack
