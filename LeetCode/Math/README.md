@@ -9,3 +9,5 @@
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Medium |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium |
 | 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Easy |
+| 1922 | [Count Good Numbers](https://leetcode.com/problems/count-good-numbers/) | Medium |
+| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Medium |
