@@ -161,6 +161,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0001-two-sum/) | Easy |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Dexturn1/leetcode-solutions/tree/main/0141-linked-list-cycle/) | Easy |
@@ -246,6 +247,7 @@ Just tell me what you want to add next.
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 | [3614-process-string-with-special-operations-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/3614-process-string-with-special-operations-ii/) | Hard |
 ## Recursion
@@ -267,6 +269,7 @@ Just tell me what you want to add next.
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0039-combination-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0039-combination-sum/) | Medium |
 | [0078-subsets](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
 | [0090-subsets-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0090-subsets-ii/) | Medium |
