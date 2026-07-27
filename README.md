@@ -198,6 +198,7 @@ Just tell me what you want to add next.
 | [0053-maximum-subarray](https://github.com/Dexturn1/leetcode-solutions/tree/main/0053-maximum-subarray/) | Medium |
 | [0118-pascals-triangle](https://github.com/Dexturn1/leetcode-solutions/tree/main/0118-pascals-triangle/) | Easy |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Dexturn1/leetcode-solutions/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
+| [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/Dexturn1/leetcode-solutions/tree/main/0152-maximum-product-subarray/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
@@ -248,6 +249,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
+| [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 | [3614-process-string-with-special-operations-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/3614-process-string-with-special-operations-ii/) | Hard |
 ## Recursion
@@ -273,6 +275,7 @@ Just tell me what you want to add next.
 | [0039-combination-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0039-combination-sum/) | Medium |
 | [0078-subsets](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
 | [0090-subsets-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0090-subsets-ii/) | Medium |
+| [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [0216-combination-sum-iii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0216-combination-sum-iii/) | Medium |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 ## Bit Manipulation
