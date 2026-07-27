@@ -6,3 +6,4 @@
 | 51 | [N-Queens](https://leetcode.com/problems/n-queens/) | Hard |
 | 37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | Hard |
 | 494 | [Target Sum](https://leetcode.com/problems/target-sum/) | Medium |
+| 3211 | [Generate Binary Strings Without Adjacent Zeros](https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/) | Medium |
