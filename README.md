@@ -106,6 +106,7 @@ Just tell me what you want to add next.
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0075-sort-colors](https://github.com/Dexturn1/leetcode-solutions/tree/main/0075-sort-colors/) | Medium |
 | [0078-subsets](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
+| [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0088-merge-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0088-merge-sorted-array/) | Easy |
 | [0090-subsets-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0090-subsets-ii/) | Medium |
@@ -214,6 +215,7 @@ Just tell me what you want to add next.
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/Dexturn1/leetcode-solutions/tree/main/0048-rotate-image/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
+| [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -249,6 +251,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
+| [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 | [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 | [3614-process-string-with-special-operations-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/3614-process-string-with-special-operations-ii/) | Hard |
@@ -274,6 +277,7 @@ Just tell me what you want to add next.
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0039-combination-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0039-combination-sum/) | Medium |
 | [0078-subsets](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
+| [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 | [0090-subsets-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0090-subsets-ii/) | Medium |
 | [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [0216-combination-sum-iii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0216-combination-sum-iii/) | Medium |
@@ -284,4 +288,8 @@ Just tell me what you want to add next.
 | [0078-subsets](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
 | [0090-subsets-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0090-subsets-ii/) | Medium |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 <!---LeetCode Topics End-->
