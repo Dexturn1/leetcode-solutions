@@ -102,6 +102,7 @@ Just tell me what you want to add next.
 | [0033-search-in-rotated-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0039-combination-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0039-combination-sum/) | Medium |
 | [0048-rotate-image](https://github.com/Dexturn1/leetcode-solutions/tree/main/0048-rotate-image/) | Medium |
+| [0051-n-queens](https://github.com/Dexturn1/leetcode-solutions/tree/main/0051-n-queens/) | Hard |
 | [0053-maximum-subarray](https://github.com/Dexturn1/leetcode-solutions/tree/main/0053-maximum-subarray/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0075-sort-colors](https://github.com/Dexturn1/leetcode-solutions/tree/main/0075-sort-colors/) | Medium |
@@ -276,6 +277,7 @@ Just tell me what you want to add next.
 | ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0039-combination-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0039-combination-sum/) | Medium |
+| [0051-n-queens](https://github.com/Dexturn1/leetcode-solutions/tree/main/0051-n-queens/) | Hard |
 | [0078-subsets](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0078-subsets/) | Medium |
 | [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 | [0090-subsets-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0090-subsets-ii/) | Medium |
