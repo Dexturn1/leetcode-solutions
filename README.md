@@ -114,6 +114,7 @@ Just tell me what you want to add next.
 | [0118-pascals-triangle](https://github.com/Dexturn1/leetcode-solutions/tree/main/0118-pascals-triangle/) | Easy |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Dexturn1/leetcode-solutions/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/Dexturn1/leetcode-solutions/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0162-find-peak-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0162-find-peak-element/) | Medium |
 | [0169-majority-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0169-majority-element/) | Easy |
@@ -166,6 +167,7 @@ Just tell me what you want to add next.
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Dexturn1/leetcode-solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0160-intersection-of-two-linked-lists](https://github.com/Dexturn1/leetcode-solutions/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
@@ -201,6 +203,7 @@ Just tell me what you want to add next.
 | [0118-pascals-triangle](https://github.com/Dexturn1/leetcode-solutions/tree/main/0118-pascals-triangle/) | Easy |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Dexturn1/leetcode-solutions/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
+| [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/Dexturn1/leetcode-solutions/tree/main/0152-maximum-product-subarray/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
@@ -254,6 +257,7 @@ Just tell me what you want to add next.
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 | [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
+| [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 | [3614-process-string-with-special-operations-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/3614-process-string-with-special-operations-ii/) | Hard |
 ## Recursion
@@ -294,4 +298,12 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
+## Trie
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
 <!---LeetCode Topics End-->
