@@ -1,63 +1,58 @@
 class Solution {
     public List<List<String>> solveNQueens(int n) {
-        List<List<String>> result = new ArrayList<>();
-        int[][] board = new int[n][n];
-        solve(board, 0, n, result);
-        return result;
+
+        char [][]board = new char[n][n];
+
+        for(char []row: board){
+            Arrays.fill(row, '.');
+        }
+
+        int[] leftRow = new int[n];
+        int[] upperDig = new int[ 2*n -1];
+        int[] lowerDig = new int[ 2*n - 1];
+
+        List<List<String>> ans = new ArrayList<>();
+
+        backtrack(0, board, leftRow, upperDig, lowerDig, ans);
+        return ans;  
     }
 
-    public boolean isSafe(int board[][],int row, int col, int n){
-        // check for the colums above the rows
-        for(int i=0 ; i<row; i++){
-            if(board[i][col] == 1){
-                return false;
-            }
-        }
 
-        // chekc if upper left digonal
-        for(int i = row-1, j = col -1; i>=0 && j>=0; i--, j--){
-            if(board[i][j] == 1){
-                return false;
-            }
-        }
-
-        // check for upper right diagonal
-        for(int i = row -1, j = col+1; i>=0 && j<n; i--, j++){
-            if(board[i][j] == 1){
-                return false;
-            }
-        }
-
-        return true;
-
-    }
-
-    public void solve(int board[][], int row, int n, List<List<String>> result){
-        if(row == n){
-            result.add(construct(board,n));
+    public void backtrack(int col, char[][]board,int []leftRow ,int[] upperDig, int[] lowerDig, List<List<String>> ans){
+        if(col == board.length){
+            ans.add(construct(board));
             return;
         }
 
-        for(int col = 0; col<n; col++){
-            if(isSafe(board, row, col, n)){
-                board[row][col] =1;
-                solve(board, row+1, n, result);
-                board[row][col]=0; //backtrack
-            }            
+        for(int row = 0; row < board.length; row++){
+
+            // checking if pos is safe
+            if( leftRow[row] == 0 && 
+                upperDig[row+col] == 0 &&
+                lowerDig[board.length - 1 + col - row] == 0){
+
+                    board[row][col] = 'Q';
+
+                    leftRow[row] = 1;
+                    upperDig[row+col] = 1;
+                    lowerDig[board.length - 1 + col - row] = 1; 
+
+                    backtrack(col+1, board, leftRow, upperDig, lowerDig, ans);   
+
+                    board[row][col] = '.';
+                    leftRow[row] = 0;
+                    upperDig[row+col] = 0;
+                    lowerDig[board.length - 1 + col - row] = 0;                
+            }
         }
     }
 
-    public List<String> construct(int board[][], int n){
-        List<String> temp  = new ArrayList<>();
-        for(int i = 0; i< n; i++){
-            StringBuilder row  = new StringBuilder();
-            for(int j = 0; j< n ; j++){
-                row.append(board[i][j] == 1 ? 'Q': '.');
-            }
-            
-            temp.add(row.toString());
+    public List<String> construct(char [][]board){
+        List<String> temp = new ArrayList<>();
+        for(char[] row: board){
+            temp.add(new String(row));
         }
-
         return temp;
     }
+
 }

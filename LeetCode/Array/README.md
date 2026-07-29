@@ -71,3 +71,4 @@
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium |
 | 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) | Medium |
 | 79 | [Word Search](https://leetcode.com/problems/word-search/) | Medium |
+| 139 | [Word Break](https://leetcode.com/problems/word-break/) | Medium |

@@ -29,3 +29,4 @@
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Medium |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Easy |
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Medium |
+| 139 | [Word Break](https://leetcode.com/problems/word-break/) | Medium |
