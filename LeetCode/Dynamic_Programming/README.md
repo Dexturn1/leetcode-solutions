@@ -30,3 +30,5 @@
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) | Easy |
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Medium |
 | 139 | [Word Break](https://leetcode.com/problems/word-break/) | Medium |
+| 403 | [Frog Jump](https://leetcode.com/problems/frog-jump/) | Hard |
+| 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Easy |
