@@ -1,36 +1,43 @@
 class Solution {
+
+    int[] dp;
+
     public int rob(int[] nums) {
+
         int n = nums.length;
-        if(n == 1)return nums[0];
-        int []arr1 = new int[n-1];
-        int []arr2 = new int[n-1];
 
-        for(int i = 1; i<n; i++){
-            arr1[i-1] = nums[i];
-            arr2[i-1] = nums[i-1]; 
-        }
+        if (n == 1) return nums[0];
 
-        return Math.max(Houserob(arr1), Houserob(arr2));
+        // Case 1: Rob houses from 0 to n-2
+        dp = new int[n];
+        Arrays.fill(dp, -1);
+
+
+        int case1 = solve(n - 2, 0, nums);
+
+        // Case 2: Rob houses from 1 to n-1
+        dp = new int[n];
+        Arrays.fill(dp, -1);
         
+        int case2 = solve(n - 1, 1, nums);
+
+        return Math.max(case1, case2);
     }
 
-     public int Houserob(int[] nums) {
-        int n = nums.length;
-        int []dp = new int[n];
+    int solve(int ind, int start, int[] nums) {
 
-        int prev = nums[0];
-        int prev2 = 0;
+        if (ind < start)
+            return 0;
 
-        for(int i =1; i<n; i++){
-            int take = nums[i];
-            if(i>1) take += prev2;
+        if (ind == start)
+            return nums[start];
 
-            int notTake = prev;
-            int curr = Math.max(take, notTake);
+        if (dp[ind] != -1)
+            return dp[ind];
 
-            prev2 = prev;
-            prev = curr;
-        }
-        return prev;
+        int pick = nums[ind] + solve(ind - 2, start, nums);
+        int notPick = solve(ind - 1, start, nums);
+
+        return dp[ind] = Math.max(pick, notPick);
     }
 }

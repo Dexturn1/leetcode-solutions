@@ -1,23 +1,31 @@
 class Solution {
+    int [][]dp;
     public int minimumTotal(List<List<Integer>> triangle) {
         int n = triangle.size();
-        Integer[][] dp = new Integer[n][n];
-        return solve(0, 0, triangle, dp);
+
+        dp = new int[n][n];
+        for(int []row: dp){
+            Arrays.fill(row, Integer.MAX_VALUE);  
+        } 
+        return solve(0, 0, triangle);     
     }
 
-    int solve(int i, int j, List<List<Integer>> triangle, Integer[][] dp) {
-        if (i == triangle.size() - 1) {
-            return triangle.get(i).get(j);
+
+    int solve(int row,int col, List<List<Integer>> tri){
+
+        if(row == tri.size()-1){
+            return tri.get(row).get(col);
         }
 
-        if (dp[i][j] != null) {
-            return dp[i][j];
-        }
+        if(dp[row][col] != Integer.MAX_VALUE)return dp[row][col];
 
-        int down = solve(i + 1, j, triangle, dp);
-        int diag = solve(i + 1, j + 1, triangle, dp);
+        int curr = tri.get(row).get(col);
+        // move down 
+        int down = curr + solve(row+1, col, tri);
+        // move dig
+        int dig = curr + solve(row+1, col+1, tri);
+        
 
-        return dp[i][j] =
-                triangle.get(i).get(j) + Math.min(down, diag);
+        return  dp [row][col]= Math.min(down ,dig);
     }
-}
+ }   
