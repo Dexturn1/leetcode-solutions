@@ -1,29 +1,43 @@
 class Solution {
+    int [][]dp;
     public boolean canPartition(int[] nums) {
-        int n = nums.length;
+
         int sum = 0;
-        for(int i: nums) sum+= i;
+        for(int i: nums) sum+=i;
 
-        if( sum % 2 != 0) return false;
+        if(sum%2 != 0)return false;
 
-        int [][]dp = new int[n][sum/2+1];
-        for(int []row : dp) Arrays.fill(row, -1); 
+        int target = sum/2;
 
-        return solve(n-1, sum/2,  nums,  dp);
-    }
-    boolean solve(int index, int target, int[]arr, int[][]dp){
+        dp = new int[nums.length][target+1];
+        for(int i[]: dp)Arrays.fill(i,-1);
 
-        if(target == 0 ) return true;
-        if(index < 0 || target < 0) return false;
-
-        if (dp[index][target] != -1)
-            return dp[index][target] == 1;
+        return solve(nums.length-1, target, nums);
         
-        boolean notTake = solve(index -1, target, arr, dp);
-        boolean take = false;
-        take = solve(index-1, target - arr[index], arr, dp);
+    }
 
-        dp[index][target] = (take || notTake) ? 1 : 0;
-        return take||notTake;
+
+    boolean solve(int index, int target, int[] nums){
+
+        if(target == 0){
+            return true;
+        }
+
+        if(index == 0){
+            return target == nums[index];
+        }
+
+        if(dp[index][target] != -1)return dp[index][target] == 1;
+
+        boolean pick = false;
+        if(target >= nums[index]){
+            pick = solve(index-1, target - nums[index], nums);
+        }
+
+        boolean notpick = solve(index-1, target, nums);
+
+
+        dp[index][target] = pick||notpick? 1:0; 
+        return  pick||notpick;
     }
 }
