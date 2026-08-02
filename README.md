@@ -129,6 +129,7 @@ Just tell me what you want to add next.
 | [0283-move-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0283-move-zeroes/) | Easy |
 | [0403-frog-jump](https://github.com/Dexturn1/leetcode-solutions/tree/main/0403-frog-jump/) | Hard |
 | [0416-partition-equal-subset-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0416-partition-equal-subset-sum/) | Medium |
+| [0455-assign-cookies](https://github.com/Dexturn1/leetcode-solutions/tree/main/0455-assign-cookies/) | Easy |
 | [0485-max-consecutive-ones](https://github.com/Dexturn1/leetcode-solutions/tree/main/0485-max-consecutive-ones/) | Easy |
 | [0540-single-element-in-a-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Dexturn1/leetcode-solutions/tree/main/0560-subarray-sum-equals-k/) | Medium |
@@ -157,6 +158,7 @@ Just tell me what you want to add next.
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 | [0234-palindrome-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0283-move-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0283-move-zeroes/) | Easy |
+| [0455-assign-cookies](https://github.com/Dexturn1/leetcode-solutions/tree/main/0455-assign-cookies/) | Easy |
 | [0876-middle-of-the-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/0876-middle-of-the-linked-list/) | Easy |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 | [2149-rearrange-array-elements-by-sign](https://github.com/Dexturn1/leetcode-solutions/tree/main/2149-rearrange-array-elements-by-sign/) | Medium |
@@ -195,6 +197,7 @@ Just tell me what you want to add next.
 | [0148-sort-list](https://github.com/Dexturn1/leetcode-solutions/tree/main/0148-sort-list/) | Medium |
 | [0169-majority-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0169-majority-element/) | Easy |
 | [0229-majority-element-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0229-majority-element-ii/) | Medium |
+| [0455-assign-cookies](https://github.com/Dexturn1/leetcode-solutions/tree/main/0455-assign-cookies/) | Easy |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -338,4 +341,8 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0062-unique-paths](https://github.com/Dexturn1/leetcode-solutions/tree/main/0062-unique-paths/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0455-assign-cookies](https://github.com/Dexturn1/leetcode-solutions/tree/main/0455-assign-cookies/) | Easy |
 <!---LeetCode Topics End-->
