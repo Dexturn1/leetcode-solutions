@@ -1,36 +1,29 @@
 class Solution {
-
-    int[][]dp;
     public int change(int amount, int[] coins) {
-        dp = new int[coins.length][amount+1];
-        for(int []row: dp)Arrays.fill(row, -1);
-        return solve(coins.length-1, amount, coins);
-    }
+
+        int n = coins.length;
+        int [][]dp = new int[n][amount+1];
 
 
-    int solve(int index, int target, int []coins){
-
-        if(target == 0){
-            return 1;
+        //Base row initialization 
+        for(int t = 0; t<= amount; t++){
+            if(t % coins[0] == 0) dp[0][t] = 1;
         }
-        
-        if(index == 0){
-            if(target % coins[0] == 0 ){
-                return 1;
+
+        for(int i = 1; i<n; i++){
+            for(int target = 0; target<= amount ; target++){
+
+                int pick = 0;
+                if(coins[i] <= target){
+                    pick = dp[i][target - coins[i]];
+                }
+                int notPick = dp[i-1][target];
+
+                dp[i][target] = pick + notPick;
             }
-            return 0;
         }
+
+        return dp[n-1][amount];
         
-        if(dp[index][target]!= -1)return dp[index][target];
-
-        int pick = 0;
-        if(coins[index]<= target){
-            pick = solve(index, target - coins[index], coins);
-        }
-
-        int notPick = solve(index-1, target, coins);
-
-        return dp[index][target] = pick + notPick;
-
     }
 }
