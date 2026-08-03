@@ -1,42 +1,48 @@
-import java.util.Arrays;
-
 class Solution {
-
-    int[][] dp;
-
     public int findTargetSumWays(int[] nums, int target) {
+        int totalSum = 0;
 
-        int sum = 0;
-        for (int x : nums)
-            sum += x;
+        for(int x: nums)totalSum +=x;
 
-        // Impossible target
-        if (Math.abs(target) > sum)
-            return 0;
+        if(Math.abs(target) > totalSum)return 0;
 
-        dp = new int[nums.length][2 * sum + 1];
+        if((target + totalSum) % 2 != 0)return 0;
 
-        for (int[] row : dp)
-            Arrays.fill(row, -1);
+        int requiredSum =(target+ totalSum)/2;
 
-        return solve(nums.length - 1, target, nums, sum);
+        return countSubset(nums, requiredSum);
+        
     }
 
-    int solve(int index, int target, int[] nums, int offset) {
+    int countSubset(int[]nums, int target){
 
-        // Outside DP range
-        if (target < -offset || target > offset)
-            return 0;
+        int n = nums.length;
+        int [][]dp = new int[n][target+1];
 
-        if (index == -1)
-            return target == 0 ? 1 : 0;
 
-        if (dp[index][target + offset] != -1)
-            return dp[index][target + offset];
+        if(nums[0] == 0){
+            dp[0][0] = 2;
+        }else{
+            dp[0][0] =1;
 
-        int plus = solve(index - 1, target + nums[index], nums, offset);
-        int minus = solve(index - 1, target - nums[index], nums, offset);
+            if(nums[0] <= target){
+                dp[0][nums[0]] = 1;
+            }
+        }
 
-        return dp[index][target + offset] = plus + minus;
+        for(int i = 1; i<n; i++){
+            for(int sum = 0; sum<=target; sum++){
+
+                int notTake = dp[i-1][sum];
+                int take = 0;
+
+                if(nums[i] <= sum){
+                    take = dp[i-1][sum-nums[i]];
+                }
+                dp[i][sum] = take+notTake; 
+            }
+
+        }
+        return dp[n-1][target];
     }
 }
