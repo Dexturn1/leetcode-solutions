@@ -1,23 +1,29 @@
 class Solution {
     public int change(int amount, int[] coins) {
+
         int n = coins.length;
         int [][]dp = new int[n][amount+1];
 
-        for(int i = 0; i<=amount ; i++){
-            if(i % coins[0] ==0) dp[0][i] = 1;
+
+        //Base row initialization 
+        for(int t = 0; t<= amount; t++){
+            if(t % coins[0] == 0) dp[0][t] = 1;
         }
-        
+
         for(int i = 1; i<n; i++){
-            for(int j = 0; j<=amount; j++){
-                int pick = dp[i-1][j];
-                int notPick = 0;
-                if(coins[i] <= j){
-                    notPick = dp[i][j - coins[i]];
+            for(int target = 0; target<= amount ; target++){
+
+                int pick = 0;
+                if(coins[i] <= target){
+                    pick = dp[i][target - coins[i]];
                 }
-                dp[i][j] = notPick + pick;
+                int notPick = dp[i-1][target];
+
+                dp[i][target] = pick + notPick;
             }
         }
-        return dp[n - 1][amount];
+
+        return dp[n-1][amount];
         
     }
 }

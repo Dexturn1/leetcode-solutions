@@ -1,19 +1,19 @@
 # 🧠 LeetCode Auto Tracker
 
 ![Solved](https://img.shields.io/badge/Solved-2-blue)
-![Easy](https://img.shields.io/badge/Easy-1-green)
-![Medium](https://img.shields.io/badge/Medium-1-orange)
+![Easy](https://img.shields.io/badge/Easy-0-green)
+![Medium](https://img.shields.io/badge/Medium-2-orange)
 ![Hard](https://img.shields.io/badge/Hard-0-red)
-![Updated](https://img.shields.io/badge/Updated-2026-08-03%2001:52%20UTC-grey)
+![Updated](https://img.shields.io/badge/Updated-2026-08-04%2001:27%20UTC-grey)
 
 ## 📂 Topics Breakdown
 | Topic | Problems | Link |
 |-------|-----------|------|
-| Array | 3 | [Array](./Array/README.md) |
-| Breadth-First Search | 2 | [Breadth-First_Search](./Breadth-First_Search/README.md) |
+| 0-1 Knapsack | 1 | [0-1_Knapsack](./0-1_Knapsack/README.md) |
+| Array | 2 | [Array](./Array/README.md) |
+| Backtracking | 1 | [Backtracking](./Backtracking/README.md) |
+| Complete Knapsack | 1 | [Complete_Knapsack](./Complete_Knapsack/README.md) |
 | Dynamic Programming | 2 | [Dynamic_Programming](./Dynamic_Programming/README.md) |
-| Greedy | 1 | [Greedy](./Greedy/README.md) |
-| Sorting | 1 | [Sorting](./Sorting/README.md) |
-| Two Pointers | 1 | [Two_Pointers](./Two_Pointers/README.md) |
+| Knapsack Problem | 2 | [Knapsack_Problem](./Knapsack_Problem/README.md) |
 
-_Last updated on **2026-08-03 01:52 UTC**_
+_Last updated on **2026-08-04 01:27 UTC**_
