@@ -1,30 +1,36 @@
 class Solution {
+    int dp[][][];
     public int maxProfit(int[] prices) {
         int n = prices.length;
-        int [][][]dp = new int[n][2][3];
-
-        for(int [][]mat : dp) 
-            for(int []row: mat) Arrays.fill(row, -1);
-        return solve(0, 1, prices, 2, dp);
+        
+        dp = new int[n][2][3];
+        for(int [][]x: dp){
+            for(int []y:x)Arrays.fill(y, -1);
+        }
+       return solve(0, 1, 2, prices);
     }
 
-    int solve(int index, int buy, int []prices, int cap, int dp[][][]){
-        if(cap == 0 || index ==  prices.length) return 0;
+    int solve(int index, int canBuy, int cap, int[]prices){
 
-        if (dp[index][buy][cap] != -1) return dp[index][buy][cap];
-
-        int profit; 
-        if(buy == 1){
-            int buying = -prices[index] + solve(index+1, 0, prices, cap, dp);
-            int notbuy = solve(index+1,1,prices,cap, dp);
-            profit = Math.max(buying, notbuy);
-        }else{
-            int sell = prices[index] + solve(index+1, 1, prices, cap-1, dp);
-            int notsell = solve(index+1, 0, prices, cap, dp);
-            profit = Math.max(sell, notsell);
+        if(index == prices.length || cap == 0){
+            return 0;
         }
 
-        return dp[index][buy][cap] = profit;
-    }
 
+        if(dp[index][canBuy][cap] != -1) return dp[index][canBuy][cap];
+        
+        int profit;
+        if(canBuy == 1 && cap > 0){
+
+            int buy = -prices[index] + solve(index+1, 0, cap, prices);
+            int skip = solve(index+1, 1, cap, prices);
+            profit = Math.max(buy, skip);
+
+        }else{
+            int sell = prices[index] + solve(index+1, 1, cap-1, prices);
+            int skip = solve(index+1, 0, cap, prices);
+            profit = Math.max(sell, skip);
+        }
+        return dp[index][canBuy][cap]=profit;
+    }
 }
