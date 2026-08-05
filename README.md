@@ -130,6 +130,7 @@ Just tell me what you want to add next.
 | [0216-combination-sum-iii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0216-combination-sum-iii/) | Medium |
 | [0229-majority-element-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0229-majority-element-ii/) | Medium |
 | [0283-move-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0283-move-zeroes/) | Easy |
+| [0300-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0300-longest-increasing-subsequence/) | Medium |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Dexturn1/leetcode-solutions/tree/main/0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium |
 | [0322-coin-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0322-coin-change/) | Medium |
 | [0403-frog-jump](https://github.com/Dexturn1/leetcode-solutions/tree/main/0403-frog-jump/) | Hard |
@@ -236,6 +237,7 @@ Just tell me what you want to add next.
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Dexturn1/leetcode-solutions/tree/main/0188-best-time-to-buy-and-sell-stock-iv/) | Hard |
 | [0198-house-robber](https://github.com/Dexturn1/leetcode-solutions/tree/main/0198-house-robber/) | Medium |
 | [0213-house-robber-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0213-house-robber-ii/) | Medium |
+| [0300-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0300-longest-increasing-subsequence/) | Medium |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/Dexturn1/leetcode-solutions/tree/main/0309-best-time-to-buy-and-sell-stock-with-cooldown/) | Medium |
 | [0322-coin-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0322-coin-change/) | Medium |
 | [0403-frog-jump](https://github.com/Dexturn1/leetcode-solutions/tree/main/0403-frog-jump/) | Hard |
@@ -274,6 +276,7 @@ Just tell me what you want to add next.
 | [0069-sqrtx](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0069-sqrtx/) | Easy |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0162-find-peak-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/0162-find-peak-element/) | Medium |
+| [0300-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0300-longest-increasing-subsequence/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0875-koko-eating-bananas](https://github.com/Dexturn1/leetcode-solutions/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/Dexturn1/leetcode-solutions/tree/main/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
@@ -378,4 +381,8 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0518-coin-change-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0518-coin-change-ii/) | Medium |
+## Longest Increasing Subsequence
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0300-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0300-longest-increasing-subsequence/) | Medium |
 <!---LeetCode Topics End-->
