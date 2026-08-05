@@ -1,41 +1,38 @@
 class Solution {
-    public int lengthOfLIS(int[] nums) {
+    int [][]dp;
 
-        List<Integer> lis = new ArrayList<>();
+    public int lengthOfLIS(int arr[]) {
+        
+        dp = new int[arr.length][arr.length+1];
 
-        lis.add(nums[0]);
+        for(int[] x: dp)Arrays.fill(x ,-1 );
 
-
-        for(int i=1; i<nums.length; i++){
-
-            if(nums[i] > lis.get(lis.size()-1))
-                lis.add(nums[i]);
-
-            else{
-                int indx = lowerBound(lis, nums[i]);
-                lis.set(indx, nums[i]);
-            }
-        }
-        return lis.size();
+        return solve(0, -1, arr);
     }
 
-    public int lowerBound(List<Integer> arr, int target){
-        int low = 0;
-        int high = arr.size()-1;
-        int ans = arr.size();
+    
+    int solve(int index, int prev, int[] arr){
+        
+        
+        if(index == arr.length)return 0;
 
-        while(low<= high){
-            int mid = low+(high - low)/2;
 
-            if(arr.get(mid) >= target){
-                ans = mid;
-                high = mid-1;
-            }
-            else{
-                low = mid+1;
-            }
+        if(dp[index][prev+1]!= -1)return dp[index][prev+1];
+
+
+        int take = 0;
+        if(prev == -1 || arr[index] > arr[prev] ){
+            //take
+             take = 1+ solve(index+1, index, arr);
         }
-        return ans;
-    }
+        
+        
+        // not take 
+        int notTake = solve(index+1, prev, arr);
+        
+        
+        
+        return dp[index][prev+1]= Math.max(take, notTake);
 
+    }
 }
