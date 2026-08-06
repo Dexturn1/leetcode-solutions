@@ -256,6 +256,7 @@ Just tell me what you want to add next.
 | [0518-coin-change-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0518-coin-change-ii/) | Medium |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0673-number-of-longest-increasing-subsequence/) | Medium |
 | [1048-longest-string-chain](https://github.com/Dexturn1/leetcode-solutions/tree/main/1048-longest-string-chain/) | Medium |
+| [1143-longest-common-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1143-longest-common-subsequence/) | Medium |
 | [1463-cherry-pickup-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/1463-cherry-pickup-ii/) | Hard |
 ## Simulation
 | Problem Name | Difficulty |
@@ -315,6 +316,7 @@ Just tell me what you want to add next.
 | [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
 | [1048-longest-string-chain](https://github.com/Dexturn1/leetcode-solutions/tree/main/1048-longest-string-chain/) | Medium |
+| [1143-longest-common-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1143-longest-common-subsequence/) | Medium |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 | [3614-process-string-with-special-operations-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/3614-process-string-with-special-operations-ii/) | Hard |
 ## Recursion
@@ -406,4 +408,8 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0673-number-of-longest-increasing-subsequence/) | Medium |
+## Longest Common Subsequence
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1143-longest-common-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1143-longest-common-subsequence/) | Medium |
 <!---LeetCode Topics End-->
