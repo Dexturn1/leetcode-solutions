@@ -258,6 +258,7 @@ Just tell me what you want to add next.
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0673-number-of-longest-increasing-subsequence/) | Medium |
 | [1048-longest-string-chain](https://github.com/Dexturn1/leetcode-solutions/tree/main/1048-longest-string-chain/) | Medium |
 | [1143-longest-common-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1143-longest-common-subsequence/) | Medium |
+| [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Dexturn1/leetcode-solutions/tree/main/1312-minimum-insertion-steps-to-make-a-string-palindrome/) | Hard |
 | [1463-cherry-pickup-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/1463-cherry-pickup-ii/) | Hard |
 ## Simulation
 | Problem Name | Difficulty |
@@ -319,6 +320,7 @@ Just tell me what you want to add next.
 | [0516-longest-palindromic-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0516-longest-palindromic-subsequence/) | Medium |
 | [1048-longest-string-chain](https://github.com/Dexturn1/leetcode-solutions/tree/main/1048-longest-string-chain/) | Medium |
 | [1143-longest-common-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1143-longest-common-subsequence/) | Medium |
+| [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Dexturn1/leetcode-solutions/tree/main/1312-minimum-insertion-steps-to-make-a-string-palindrome/) | Hard |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/3211-generate-binary-strings-without-adjacent-zeros/) | Medium |
 | [3614-process-string-with-special-operations-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/3614-process-string-with-special-operations-ii/) | Hard |
 ## Recursion
