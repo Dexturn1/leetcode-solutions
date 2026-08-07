@@ -13,3 +13,4 @@
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | Medium |
 | 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | Medium |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy |
+| 1048 | [Longest String Chain](https://leetcode.com/problems/longest-string-chain/) | Medium |

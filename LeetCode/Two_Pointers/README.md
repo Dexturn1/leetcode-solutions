@@ -21,3 +21,4 @@
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | Easy |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | Medium |
+| 1048 | [Longest String Chain](https://leetcode.com/problems/longest-string-chain/) | Medium |

@@ -76,3 +76,5 @@
 | 1463 | [Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii/) | Hard |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Medium |
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium |
+| 1048 | [Longest String Chain](https://leetcode.com/problems/longest-string-chain/) | Medium |
+| 673 | [Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) | Medium |
