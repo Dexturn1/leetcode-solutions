@@ -13,11 +13,8 @@ class Solution {
     }
 
     int solve(int i, int j, String s, String t){
-
-        if(i == -1 && j == -1)return 1;
-        if(j == -1)return 1;
-        if(i== -1)return 0;
-
+        if(j == -1) return 1;
+        if(i == -1) return 0;
 
         if(dp[i][j]!= -1)return dp[i][j];
 
