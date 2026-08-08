@@ -21,3 +21,7 @@
 | 139 | [Word Break](https://leetcode.com/problems/word-break/) | Medium |
 | 1048 | [Longest String Chain](https://leetcode.com/problems/longest-string-chain/) | Medium |
 | 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | Medium |
+| 1092 | [Shortest Common Supersequence ](https://leetcode.com/problems/shortest-common-supersequence/) | Hard |
+| 583 | [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/) | Medium |
+| 1312 | [Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | Hard |
+| 516 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) | Medium |
