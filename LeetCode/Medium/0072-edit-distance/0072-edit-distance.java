@@ -7,13 +7,16 @@ class Solution {
 
         dp = new int[n+1][m+1];
 
-        for(int i = 0; i<=n; i++){
-            for(int j = 0; j<=m; j++){
-                dp[0][j] = j;
-                
-                dp[i][0] = i;
-            }
+         // word2 prefix from empty word1
+        for (int j = 0; j <= m; j++) {
+            dp[0][j] = j;
         }
+
+        // word1 prefix to empty word2
+        for (int i = 0; i <= n; i++) {
+            dp[i][0] = i;
+        }
+
 
         for(int i = 1; i<=n; i++){
             for(int j = 1; j<=m; j++){
