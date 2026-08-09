@@ -42,3 +42,5 @@
 | 583 | [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/) | Medium |
 | 1312 | [Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | Hard |
 | 516 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) | Medium |
+| 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | Hard |
+| 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | Medium |

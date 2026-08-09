@@ -1,0 +1,41 @@
+class Solution {
+    int dp[][];
+    public int minDistance(String s1, String s2) {
+
+        int n = s1.length();
+        int m = s2.length();
+
+        dp = new int[n+1][m+1];
+
+         // word2 prefix from empty word1
+        for (int j = 0; j <= m; j++) {
+            dp[0][j] = j;
+        }
+
+        // word1 prefix to empty word2
+        for (int i = 0; i <= n; i++) {
+            dp[i][0] = i;
+        }
+
+
+        for(int i = 1; i<=n; i++){
+            for(int j = 1; j<=m; j++){
+
+                if(s1.charAt(i-1) == s2.charAt(j-1)){
+                    dp[i][j] = dp[i-1][j-1]; 
+                }
+                else{
+                    int replace = 1+ dp[i-1][j-1];
+                    int insert = 1 + dp[i][j-1];
+                    int del = 1 + dp[i-1][j];
+
+                    dp[i][j] = Math.min(del, Math.min(replace, insert));
+                }
+
+            }
+        }
+
+        return dp[n][m];
+
+    }
+}
