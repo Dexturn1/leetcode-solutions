@@ -44,3 +44,4 @@
 | 516 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) | Medium |
 | 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) | Hard |
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | Medium |
+| 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard |
