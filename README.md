@@ -149,6 +149,7 @@ Just tell me what you want to add next.
 | [1463-cherry-pickup-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/1463-cherry-pickup-ii/) | Hard |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/Dexturn1/leetcode-solutions/tree/main/1482-minimum-number-of-days-to-make-m-bouquets/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/1539-kth-missing-positive-number/) | Easy |
+| [1547-minimum-cost-to-cut-a-stick](https://github.com/Dexturn1/leetcode-solutions/tree/main/1547-minimum-cost-to-cut-a-stick/) | Hard |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Dexturn1/leetcode-solutions/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
 | [2149-rearrange-array-elements-by-sign](https://github.com/Dexturn1/leetcode-solutions/tree/main/2149-rearrange-array-elements-by-sign/) | Medium |
 ## Two Pointers
@@ -214,6 +215,7 @@ Just tell me what you want to add next.
 | [0368-largest-divisible-subset](https://github.com/Dexturn1/leetcode-solutions/tree/main/0368-largest-divisible-subset/) | Medium |
 | [0455-assign-cookies](https://github.com/Dexturn1/leetcode-solutions/tree/main/0455-assign-cookies/) | Easy |
 | [1048-longest-string-chain](https://github.com/Dexturn1/leetcode-solutions/tree/main/1048-longest-string-chain/) | Medium |
+| [1547-minimum-cost-to-cut-a-stick](https://github.com/Dexturn1/leetcode-solutions/tree/main/1547-minimum-cost-to-cut-a-stick/) | Hard |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -265,6 +267,7 @@ Just tell me what you want to add next.
 | [1143-longest-common-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1143-longest-common-subsequence/) | Medium |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/Dexturn1/leetcode-solutions/tree/main/1312-minimum-insertion-steps-to-make-a-string-palindrome/) | Hard |
 | [1463-cherry-pickup-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/1463-cherry-pickup-ii/) | Hard |
+| [1547-minimum-cost-to-cut-a-stick](https://github.com/Dexturn1/leetcode-solutions/tree/main/1547-minimum-cost-to-cut-a-stick/) | Hard |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
