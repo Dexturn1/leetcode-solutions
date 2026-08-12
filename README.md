@@ -246,6 +246,7 @@ Just tell me what you want to add next.
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0123-best-time-to-buy-and-sell-stock-iii/) | Hard |
 | [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
+| [0132-palindrome-partitioning-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 | [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/Dexturn1/leetcode-solutions/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Dexturn1/leetcode-solutions/tree/main/0188-best-time-to-buy-and-sell-stock-iv/) | Hard |
@@ -329,6 +330,7 @@ Just tell me what you want to add next.
 | [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 | [0115-distinct-subsequences](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Hard/0115-distinct-subsequences/) | Hard |
 | [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
+| [0132-palindrome-partitioning-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 | [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
 | [0516-longest-palindromic-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0516-longest-palindromic-subsequence/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/Dexturn1/leetcode-solutions/tree/main/0583-delete-operation-for-two-strings/) | Medium |
