@@ -1,41 +1,33 @@
 class Solution {
     int dp[][];
     public int minDistance(String s1, String s2) {
+        int i = s1.length();
+        int j = s2.length();
 
-        int n = s1.length();
-        int m = s2.length();
+        dp = new int [i][j];
+        for(int []row: dp)Arrays.fill(row, -1);
 
-        dp = new int[n+1][m+1];
+        return  solve(i-1, j-1, s1, s2);
+    }
 
-         // word2 prefix from empty word1
-        for (int j = 0; j <= m; j++) {
-            dp[0][j] = j;
+    int solve(int i, int j, String s1, String s2){
+
+        // base case
+        if(i <0)return j+1;
+        if(j<0)return i+1;
+
+        if(dp[i][j]!= -1)return dp[i][j];
+
+        if(s1.charAt(i) == s2.charAt(j)){
+
+            return dp[i][j] = solve(i-1, j-1, s1, s2);
+        }else{
+            int replace = 1 + solve(i-1, j-1, s1, s2);
+            int insert = 1 + solve(i, j-1, s1, s2);
+            int delete = 1 + solve(i-1, j, s1, s2);
+
+            return dp[i][j] = Math.min(replace, Math.min(insert, delete));   
         }
-
-        // word1 prefix to empty word2
-        for (int i = 0; i <= n; i++) {
-            dp[i][0] = i;
-        }
-
-
-        for(int i = 1; i<=n; i++){
-            for(int j = 1; j<=m; j++){
-
-                if(s1.charAt(i-1) == s2.charAt(j-1)){
-                    dp[i][j] = dp[i-1][j-1]; 
-                }
-                else{
-                    int replace = 1+ dp[i-1][j-1];
-                    int insert = 1 + dp[i][j-1];
-                    int del = 1 + dp[i-1][j];
-
-                    dp[i][j] = Math.min(del, Math.min(replace, insert));
-                }
-
-            }
-        }
-
-        return dp[n][m];
 
     }
 }
