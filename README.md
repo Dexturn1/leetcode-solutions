@@ -266,6 +266,7 @@ Just tell me what you want to add next.
 | [0518-coin-change-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0518-coin-change-ii/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/Dexturn1/leetcode-solutions/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0673-number-of-longest-increasing-subsequence/) | Medium |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
 | [1035-uncrossed-lines](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1035-uncrossed-lines/) | Medium |
 | [1048-longest-string-chain](https://github.com/Dexturn1/leetcode-solutions/tree/main/1048-longest-string-chain/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/1092-shortest-common-supersequence/) | Hard |
@@ -336,6 +337,7 @@ Just tell me what you want to add next.
 | [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
 | [0516-longest-palindromic-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0516-longest-palindromic-subsequence/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/Dexturn1/leetcode-solutions/tree/main/0583-delete-operation-for-two-strings/) | Medium |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
 | [1048-longest-string-chain](https://github.com/Dexturn1/leetcode-solutions/tree/main/1048-longest-string-chain/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1143-longest-common-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1143-longest-common-subsequence/) | Medium |
@@ -437,6 +439,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0583-delete-operation-for-two-strings](https://github.com/Dexturn1/leetcode-solutions/tree/main/0583-delete-operation-for-two-strings/) | Medium |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
 | [1035-uncrossed-lines](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1035-uncrossed-lines/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1143-longest-common-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1143-longest-common-subsequence/) | Medium |
