@@ -1,34 +1,20 @@
 class Solution {
-    int[] dp;
-
     public int jump(int[] nums) {
-        int n = nums.length;
 
-        dp = new int[n];
-        Arrays.fill(dp, -1);
+        int jumps = 0;
+        int currentEnd = 0;
+        int farthest = 0;
 
-        return fun(nums, 0);
-    }
+        for (int i = 0; i < nums.length - 1; i++) {
 
-    int fun(int[] nums, int index) {
+            farthest = Math.max(farthest, i + nums[i]);
 
-        if (index >= nums.length - 1)
-            return 0;
-
-        if (dp[index] != -1)
-            return dp[index];
-
-        int min = Integer.MAX_VALUE;
-
-        for (int i = 1; i <= nums[index]; i++) {
-
-            int next = fun(nums, index + i);
-
-            if (next != Integer.MAX_VALUE) {
-                min = Math.min(min, next + 1);
+            if (i == currentEnd) {
+                jumps++;
+                currentEnd = farthest;
             }
         }
 
-        return dp[index] = min;
+        return jumps;
     }
 }
