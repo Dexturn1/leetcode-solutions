@@ -144,6 +144,7 @@ Just tell me what you want to add next.
 | [0540-single-element-in-a-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Dexturn1/leetcode-solutions/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0673-number-of-longest-increasing-subsequence/) | Medium |
+| [0860-lemonade-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0860-lemonade-change/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/Dexturn1/leetcode-solutions/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1035-uncrossed-lines](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1035-uncrossed-lines/) | Medium |
 | [1048-longest-string-chain](https://github.com/Dexturn1/leetcode-solutions/tree/main/1048-longest-string-chain/) | Medium |
@@ -405,6 +406,7 @@ Just tell me what you want to add next.
 | [0044-wildcard-matching](https://github.com/Dexturn1/leetcode-solutions/tree/main/0044-wildcard-matching/) | Hard |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 | [0455-assign-cookies](https://github.com/Dexturn1/leetcode-solutions/tree/main/0455-assign-cookies/) | Easy |
+| [0860-lemonade-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0860-lemonade-change/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
