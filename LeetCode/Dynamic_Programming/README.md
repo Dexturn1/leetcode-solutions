@@ -46,3 +46,6 @@
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | Medium |
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard |
 | 132 | [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) | Hard |
+| 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Medium |
+| 1035 | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | Medium |
+| 712 | [Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/) | Medium |

@@ -78,3 +78,5 @@
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium |
 | 1048 | [Longest String Chain](https://leetcode.com/problems/longest-string-chain/) | Medium |
 | 673 | [Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) | Medium |
+| 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Medium |
+| 1035 | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | Medium |
