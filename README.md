@@ -106,6 +106,7 @@ Just tell me what you want to add next.
 | [0051-n-queens](https://github.com/Dexturn1/leetcode-solutions/tree/main/0051-n-queens/) | Hard |
 | [0053-maximum-subarray](https://github.com/Dexturn1/leetcode-solutions/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/Dexturn1/leetcode-solutions/tree/main/0055-jump-game/) | Medium |
+| [0057-insert-interval](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0057-insert-interval/) | Medium |
 | [0063-unique-paths-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0063-unique-paths-ii/) | Medium |
 | [0064-minimum-path-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0064-minimum-path-sum/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
