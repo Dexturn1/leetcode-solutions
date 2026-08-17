@@ -11,3 +11,5 @@
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Medium |
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | Hard |
 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Medium |
+| 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | Medium |
+| 452 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium |

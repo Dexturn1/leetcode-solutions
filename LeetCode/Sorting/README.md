@@ -14,3 +14,4 @@
 | 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | Medium |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy |
 | 1048 | [Longest String Chain](https://leetcode.com/problems/longest-string-chain/) | Medium |
+| 452 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium |

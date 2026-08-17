@@ -80,3 +80,5 @@
 | 673 | [Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/) | Medium |
 | 45 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | Medium |
 | 1035 | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | Medium |
+| 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | Medium |
+| 452 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium |
