@@ -153,6 +153,7 @@ Just tell me what you want to add next.
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0673-number-of-longest-increasing-subsequence/) | Medium |
 | [0860-lemonade-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0860-lemonade-change/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/Dexturn1/leetcode-solutions/tree/main/0875-koko-eating-bananas/) | Medium |
+| [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 | [1035-uncrossed-lines](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1035-uncrossed-lines/) | Medium |
 | [1048-longest-string-chain](https://github.com/Dexturn1/leetcode-solutions/tree/main/1048-longest-string-chain/) | Medium |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/Dexturn1/leetcode-solutions/tree/main/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
@@ -305,6 +306,7 @@ Just tell me what you want to add next.
 | [0064-minimum-path-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0064-minimum-path-sum/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
+| [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 | [1463-cherry-pickup-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/1463-cherry-pickup-ii/) | Hard |
 ## Prefix Sum
 | Problem Name | Difficulty |
@@ -432,6 +434,7 @@ Just tell me what you want to add next.
 | ------- | ------- |
 | [0322-coin-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0322-coin-change/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
+| [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 ## Knapsack Problem
 | Problem Name | Difficulty |
 | ------- | ------- |
