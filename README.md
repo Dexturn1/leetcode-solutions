@@ -296,6 +296,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -398,6 +399,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
+| [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -429,6 +431,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0322-coin-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0322-coin-change/) | Medium |
+| [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 ## Knapsack Problem
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -463,4 +466,8 @@ Just tell me what you want to add next.
 | [1035-uncrossed-lines](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1035-uncrossed-lines/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1143-longest-common-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1143-longest-common-subsequence/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 <!---LeetCode Topics End-->
