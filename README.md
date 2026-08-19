@@ -149,6 +149,7 @@ Just tell me what you want to add next.
 | [0494-target-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0494-target-sum/) | Medium |
 | [0518-coin-change-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0518-coin-change-ii/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
+| [0542-01-matrix](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0542-01-matrix/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Dexturn1/leetcode-solutions/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0673-number-of-longest-increasing-subsequence/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
@@ -279,6 +280,7 @@ Just tell me what you want to add next.
 | [0509-fibonacci-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0509-fibonacci-number/) | Easy |
 | [0516-longest-palindromic-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0516-longest-palindromic-subsequence/) | Medium |
 | [0518-coin-change-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0518-coin-change-ii/) | Medium |
+| [0542-01-matrix](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0542-01-matrix/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/Dexturn1/leetcode-solutions/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0673-number-of-longest-increasing-subsequence/) | Medium |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
@@ -307,6 +309,7 @@ Just tell me what you want to add next.
 | [0064-minimum-path-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0064-minimum-path-sum/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
+| [0542-01-matrix](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0542-01-matrix/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
 | [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 | [1463-cherry-pickup-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/1463-cherry-pickup-ii/) | Hard |
@@ -436,6 +439,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0322-coin-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0322-coin-change/) | Medium |
+| [0542-01-matrix](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
 | [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
