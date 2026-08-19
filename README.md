@@ -157,6 +157,7 @@ Just tell me what you want to add next.
 | [0860-lemonade-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0860-lemonade-change/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/Dexturn1/leetcode-solutions/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
+| [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 | [1035-uncrossed-lines](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1035-uncrossed-lines/) | Medium |
 | [1048-longest-string-chain](https://github.com/Dexturn1/leetcode-solutions/tree/main/1048-longest-string-chain/) | Medium |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/Dexturn1/leetcode-solutions/tree/main/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
@@ -303,6 +304,7 @@ Just tell me what you want to add next.
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0130-surrounded-regions](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0130-surrounded-regions/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
+| [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -315,6 +317,7 @@ Just tell me what you want to add next.
 | [0542-01-matrix](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0542-01-matrix/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
 | [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
+| [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 | [1463-cherry-pickup-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/1463-cherry-pickup-ii/) | Hard |
 ## Prefix Sum
 | Problem Name | Difficulty |
@@ -412,6 +415,7 @@ Just tell me what you want to add next.
 | [0130-surrounded-regions](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0130-surrounded-regions/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
+| [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -448,6 +452,7 @@ Just tell me what you want to add next.
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
 | [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
+| [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 ## Knapsack Problem
 | Problem Name | Difficulty |
 | ------- | ------- |
