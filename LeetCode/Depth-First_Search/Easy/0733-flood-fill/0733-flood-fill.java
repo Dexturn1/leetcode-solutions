@@ -1,29 +1,55 @@
+class Pixal{
+    int row;
+    int col;
+    int preColor;
+    Pixal(int row, int col, int color){
+        this.row = row;
+        this.col = col;
+        this.preColor = color;
+    }
+}
+
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        int iniColor = image[sr][sc]; 
-        int [][]ans  = image;
-        int [] delRow = {-1,0,1,0};
-        int [] delCol = {0,1,0,-1};
-        dfs(image, ans, delRow, delCol, sr, sc, iniColor, color);
-        return ans;
-    }
 
-    public void dfs(int[][] image,int [][]ans,int[] delRow, int[]delCol,int sr, int sc, int iniColor, int color){
-        ans[sr][sc] = color;
         int n = image.length;
         int m = image[0].length;
-        for(int i=0; i<4; i++){
-            int nrow = sr + delRow[i];
-            int ncol = sc + delCol[i];
 
-            if(nrow>=0 && nrow < n && ncol>=0 && ncol<m && image[nrow][ncol] == iniColor && ans[nrow][ncol] != color){
-                dfs(image, ans, delRow, delCol, nrow, ncol, iniColor, color);
+
+        boolean [][]visited = new boolean[n][m];
+
+
+        int []delRow = {-1, 1, 0, 0};
+        int []delCol = {0, 0, -1, 1};
+
+        Queue<Pixal> queue = new LinkedList<>();
+        visited[sr][sc] = true;
+        queue.offer(new Pixal(sr, sc, image[sr][sc]));
+
+        while(!queue.isEmpty()){
+            int cRow = queue.peek().row;
+            int cCol = queue.peek().col;
+            int preColor = queue.peek().preColor;
+            queue.poll();
+
+            image[cRow][cCol] = color;
+
+
+            for(int i = 0; i<delRow.length; i++){
+                int nRow = cRow + delRow[i];
+                int nCol = cCol + delCol[i];
+               
+
+                if(nCol>-1 && nCol <m && nRow >-1 && nRow<n && visited[nRow][nCol] == false && image[nRow][nCol] == preColor){
+                    
+                    visited[nRow][nCol] = true;
+                    queue.offer(new Pixal(nRow, nCol, image[nRow][nCol]));
+                }
+
             }
-            
-        } 
 
+        }
+        return image;
+        
     }
-
-
-
 }

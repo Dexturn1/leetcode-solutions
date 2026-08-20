@@ -1,59 +1,60 @@
-class Solution {
+class Node{
+    int row;
+    int col;
+    int dist;
 
-    static class Node{
-            int row;
-            int col;
-            int dist; 
-
-            Node(int row, int col, int dist){
-                this.row = row;
-                this.col = col;
-                this.dist = dist;
-            }
+    Node(int row, int col, int dist){
+        this.row = row;
+        this.col = col;
+        this.dist = dist;
     }
+}
 
+
+class Solution {
     public int[][] updateMatrix(int[][] mat) {
+
         int n = mat.length;
         int m = mat[0].length;
 
-        boolean[][]visited = new boolean[n][m];
-        int [][] distance = new int[n][m];
+        boolean [][]visited = new boolean[n][m];
+        int [][]dist = new int[n][m];
 
-        Queue<Node> queue = new LinkedList<>();
 
-        for(int i=0; i<n; i++){
-            for(int j=0;j<m; j++){
+        Queue<Node> q = new LinkedList<>();
+
+        for(int i = 0; i<n; i++){
+            for(int j = 0; j<m; j++){
                 if(mat[i][j] == 0){
-                    queue.offer(new Node(i,j,0));
                     visited[i][j] = true;
+                    q.offer(new Node(i, j, 0));
                 }
             }
         }
+        
+        int [] delRow = {-1, 1, 0, 0};
+        int [] delCol = {0, 0, -1, 1};
 
-        int []delrow = {-1,0,1,0};
-        int []delcol = {0,1,0,-1};
+        while(!q.isEmpty()){
+            int currRow = q.peek().row;
+            int currCol = q.peek().col;
+            int currDist = q.peek().dist;
+            q.poll();
 
-        while(!queue.isEmpty()){
-            Node curr = queue.poll();
-            int row = curr.row;
-            int col = curr.col;
-            int dist = curr.dist;
+            dist[currRow][currCol] = currDist;
 
-            distance[row][col] = dist;
-
-            for(int i = 0; i< 4; i++){
-                int newrow = row + delrow[i];
-                int newcol = col + delcol[i];
-
-                if(newrow >= 0 && newrow <n && newcol >= 0 && newcol <m && !visited[newrow][newcol]){
-                    visited[newrow][newcol] = true;
-                    queue.offer(new Node(newrow,newcol,dist+1));
+            for(int i = 0; i<4; i++){
+                int newRow = currRow + delRow[i];
+                int newCol = currCol + delCol[i];
+                if(newRow >=0 && newRow < n && newCol >=0 && newCol <m && !visited[newRow][newCol]){
+                    visited[newRow][newCol] = true;
+                    q.add(new Node(newRow, newCol,currDist+1));
                 }
+
             }
 
+        } 
 
-        }
-
-        return distance;
-        }
+        return dist;
+    }
 }
