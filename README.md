@@ -421,6 +421,7 @@ Just tell me what you want to add next.
 | [0130-surrounded-regions](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0200-number-of-islands/) | Medium |
 | [0207-course-schedule](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0207-course-schedule/) | Medium |
+| [0210-course-schedule-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0210-course-schedule-ii/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
 | [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
@@ -459,6 +460,7 @@ Just tell me what you want to add next.
 | [0130-surrounded-regions](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0200-number-of-islands/) | Medium |
 | [0207-course-schedule](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0207-course-schedule/) | Medium |
+| [0210-course-schedule-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0210-course-schedule-ii/) | Medium |
 | [0322-coin-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
@@ -504,6 +506,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0207-course-schedule](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0207-course-schedule/) | Medium |
+| [0210-course-schedule-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0210-course-schedule-ii/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
 ## Bidirectional Search
@@ -522,6 +525,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0207-course-schedule](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0207-course-schedule/) | Medium |
+| [0210-course-schedule-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0210-course-schedule-ii/) | Medium |
 ## Directed Acyclic Graph
 | Problem Name | Difficulty |
 | ------- | ------- |
