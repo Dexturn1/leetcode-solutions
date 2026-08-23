@@ -19,3 +19,4 @@
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Medium |
 | 139 | [Word Break](https://leetcode.com/problems/word-break/) | Medium |
 | 1048 | [Longest String Chain](https://leetcode.com/problems/longest-string-chain/) | Medium |
+| 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/) | Hard |
