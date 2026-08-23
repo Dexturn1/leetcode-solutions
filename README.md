@@ -307,6 +307,7 @@ Just tell me what you want to add next.
 | [0130-surrounded-regions](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
+| [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
 | [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
@@ -421,6 +422,7 @@ Just tell me what you want to add next.
 | [0200-number-of-islands](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
+| [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
 | [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
@@ -459,6 +461,7 @@ Just tell me what you want to add next.
 | [0542-01-matrix](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
+| [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
 | [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 | [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 ## Knapsack Problem
@@ -499,8 +502,17 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
+| [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
 ## Bidirectional Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0127-word-ladder](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Hard/0127-word-ladder/) | Hard |
+## Graph Coloring
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
+## Bipartite Graph
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
 <!---LeetCode Topics End-->
