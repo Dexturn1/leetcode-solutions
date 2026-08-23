@@ -208,6 +208,7 @@ Just tell me what you want to add next.
 | [0001-two-sum](https://github.com/Dexturn1/leetcode-solutions/tree/main/0001-two-sum/) | Easy |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
+| [0127-word-ladder](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Hard/0127-word-ladder/) | Hard |
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Dexturn1/leetcode-solutions/tree/main/0141-linked-list-cycle/) | Easy |
@@ -359,6 +360,7 @@ Just tell me what you want to add next.
 | [0072-edit-distance](https://github.com/Dexturn1/leetcode-solutions/tree/main/0072-edit-distance/) | Medium |
 | [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 | [0115-distinct-subsequences](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Hard/0115-distinct-subsequences/) | Hard |
+| [0127-word-ladder](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Hard/0127-word-ladder/) | Hard |
 | [0131-palindrome-partitioning](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0131-palindrome-partitioning/) | Medium |
 | [0132-palindrome-partitioning-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 | [0139-word-break](https://github.com/Dexturn1/leetcode-solutions/tree/main/0139-word-break/) | Medium |
@@ -446,6 +448,7 @@ Just tell me what you want to add next.
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0127-word-ladder](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Hard/0127-word-ladder/) | Hard |
 | [0130-surrounded-regions](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0130-surrounded-regions/) | Medium |
 | [0322-coin-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0542-01-matrix/) | Medium |
@@ -491,4 +494,8 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
+## Bidirectional Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0127-word-ladder](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Hard/0127-word-ladder/) | Hard |
 <!---LeetCode Topics End-->
