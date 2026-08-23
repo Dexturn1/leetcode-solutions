@@ -132,6 +132,7 @@ Just tell me what you want to add next.
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/Dexturn1/leetcode-solutions/tree/main/0188-best-time-to-buy-and-sell-stock-iv/) | Hard |
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 | [0198-house-robber](https://github.com/Dexturn1/leetcode-solutions/tree/main/0198-house-robber/) | Medium |
+| [0200-number-of-islands](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0200-number-of-islands/) | Medium |
 | [0213-house-robber-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0213-house-robber-ii/) | Medium |
 | [0216-combination-sum-iii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0216-combination-sum-iii/) | Medium |
 | [0229-majority-element-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/0229-majority-element-ii/) | Medium |
@@ -304,6 +305,7 @@ Just tell me what you want to add next.
 | ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Dexturn1/leetcode-solutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0130-surrounded-regions](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0130-surrounded-regions/) | Medium |
+| [0200-number-of-islands](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 ## Matrix
@@ -315,6 +317,7 @@ Just tell me what you want to add next.
 | [0073-set-matrix-zeroes](https://github.com/Dexturn1/leetcode-solutions/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 | [0130-surrounded-regions](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0130-surrounded-regions/) | Medium |
+| [0200-number-of-islands](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0200-number-of-islands/) | Medium |
 | [0542-01-matrix](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0542-01-matrix/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
 | [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
@@ -415,6 +418,7 @@ Just tell me what you want to add next.
 | ------- | ------- |
 | [0079-word-search](https://github.com/Dexturn1/leetcode-solutions/tree/main/0079-word-search/) | Medium |
 | [0130-surrounded-regions](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0130-surrounded-regions/) | Medium |
+| [0200-number-of-islands](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
 | [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
@@ -450,6 +454,7 @@ Just tell me what you want to add next.
 | ------- | ------- |
 | [0127-word-ladder](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Hard/0127-word-ladder/) | Hard |
 | [0130-surrounded-regions](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0130-surrounded-regions/) | Medium |
+| [0200-number-of-islands](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0200-number-of-islands/) | Medium |
 | [0322-coin-change](https://github.com/Dexturn1/leetcode-solutions/tree/main/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
