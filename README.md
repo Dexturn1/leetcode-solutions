@@ -425,6 +425,7 @@ Just tell me what you want to add next.
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
 | [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
+| [0802-find-eventual-safe-states](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0802-find-eventual-safe-states/) | Medium |
 | [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
@@ -466,6 +467,7 @@ Just tell me what you want to add next.
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0733-flood-fill/) | Easy |
 | [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
+| [0802-find-eventual-safe-states](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0802-find-eventual-safe-states/) | Medium |
 | [0994-rotting-oranges](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0994-rotting-oranges/) | Medium |
 | [1020-number-of-enclaves](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1020-number-of-enclaves/) | Medium |
 ## Knapsack Problem
@@ -509,6 +511,7 @@ Just tell me what you want to add next.
 | [0210-course-schedule-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0210-course-schedule-ii/) | Medium |
 | [0547-number-of-provinces](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0547-number-of-provinces/) | Medium |
 | [0785-is-graph-bipartite](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0785-is-graph-bipartite/) | Medium |
+| [0802-find-eventual-safe-states](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0802-find-eventual-safe-states/) | Medium |
 ## Bidirectional Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -526,8 +529,17 @@ Just tell me what you want to add next.
 | ------- | ------- |
 | [0207-course-schedule](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0210-course-schedule-ii/) | Medium |
+| [0802-find-eventual-safe-states](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0802-find-eventual-safe-states/) | Medium |
 ## Directed Acyclic Graph
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0207-course-schedule](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0207-course-schedule/) | Medium |
+## Kosaraju's Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0802-find-eventual-safe-states](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0802-find-eventual-safe-states/) | Medium |
+## Tarjan's SCC Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0802-find-eventual-safe-states](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0802-find-eventual-safe-states/) | Medium |
 <!---LeetCode Topics End-->
