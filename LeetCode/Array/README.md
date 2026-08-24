@@ -82,3 +82,4 @@
 | 1035 | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | Medium |
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | Medium |
 | 452 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium |
+| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium |

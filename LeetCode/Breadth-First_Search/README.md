@@ -8,3 +8,7 @@
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium |
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/) | Hard |
+| 785 | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/) | Medium |
+| 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium |
+| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium |
+| 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | Medium |

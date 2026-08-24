@@ -14,3 +14,4 @@
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | Medium |
 | 79 | [Word Search](https://leetcode.com/problems/word-search/) | Medium |
 | 1463 | [Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii/) | Hard |
+| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium |
