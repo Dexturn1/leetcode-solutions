@@ -12,3 +12,4 @@
 | 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium |
 | 210 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | Medium |
+| 802 | [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) | Medium |
