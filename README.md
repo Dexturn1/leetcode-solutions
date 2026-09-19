@@ -202,6 +202,7 @@ Just tell me what you want to add next.
 | [0189-rotate-array](https://github.com/Dexturn1/leetcode-solutions/tree/main/0189-rotate-array/) | Medium |
 | [0368-largest-divisible-subset](https://github.com/Dexturn1/leetcode-solutions/tree/main/0368-largest-divisible-subset/) | Medium |
 | [0509-fibonacci-number](https://github.com/Dexturn1/leetcode-solutions/tree/main/0509-fibonacci-number/) | Easy |
+| [1401-circle-and-rectangle-overlapping](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1401-circle-and-rectangle-overlapping/) | Medium |
 | [1922-count-good-numbers](https://github.com/Dexturn1/leetcode-solutions/tree/main/1922-count-good-numbers/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -542,4 +543,8 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0802-find-eventual-safe-states](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0802-find-eventual-safe-states/) | Medium |
+## Geometry
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1401-circle-and-rectangle-overlapping](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1401-circle-and-rectangle-overlapping/) | Medium |
 <!---LeetCode Topics End-->
