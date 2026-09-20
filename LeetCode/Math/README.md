@@ -12,3 +12,4 @@
 | 1922 | [Count Good Numbers](https://leetcode.com/problems/count-good-numbers/) | Medium |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Medium |
 | 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Easy |
+| 1401 | [Circle and Rectangle Overlapping](https://leetcode.com/problems/circle-and-rectangle-overlapping/) | Medium |
