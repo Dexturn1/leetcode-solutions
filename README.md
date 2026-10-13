@@ -547,4 +547,8 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1401-circle-and-rectangle-overlapping](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/1401-circle-and-rectangle-overlapping/) | Medium |
+## Boyer–Moore Majority Vote Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0169-majority-element/) | Easy |
 <!---LeetCode Topics End-->
