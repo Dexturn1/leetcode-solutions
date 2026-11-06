@@ -15,3 +15,4 @@
 | 79 | [Word Search](https://leetcode.com/problems/word-search/) | Medium |
 | 1463 | [Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii/) | Hard |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium |
+| 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Medium |

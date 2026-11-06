@@ -83,3 +83,4 @@
 | 134 | [Gas Station](https://leetcode.com/problems/gas-station/) | Medium |
 | 452 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium |
+| 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Medium |
