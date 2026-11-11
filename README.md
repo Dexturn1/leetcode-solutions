@@ -554,6 +554,7 @@ Just tell me what you want to add next.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0169-majority-element](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Easy/0169-majority-element/) | Easy |
+| [0229-majority-element-ii](https://github.com/Dexturn1/leetcode-solutions/tree/main/LeetCode/Medium/0229-majority-element-ii/) | Medium |
 ## Quicksort
 | Problem Name | Difficulty |
 | ------- | ------- |
