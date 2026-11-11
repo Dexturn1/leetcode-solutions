@@ -1,47 +1,46 @@
 class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
-        int n = nums.length;
-        List<List<Integer>> ans = new ArrayList<>();
+        
+        Set<List<Integer>> ans = new HashSet<>();
+
         Arrays.sort(nums);
 
-        for(int i=0; i<n; i++){
+        for(int i = 0; i< nums.length; i++){
+            if(i > 0 && nums[i] == nums[i-1]) continue;
 
-            if(i>0 && nums[i] == nums[i-1])continue;
+            for(int j = i+1; j<nums.length; j++){
+                if(j > i + 1 && nums[j] == nums[j-1]) continue;
 
-            for(int j = i+1; j<n; j++){
+                int left = j+1;
+                int right = nums.length-1;
 
-                if(j>i+1 && nums[j] == nums[j-1])continue;
+                while(left<right){
 
-                int start = j+1;
-                int end = n-1;
-
-                while (start < end){
-                    long sum = (long)nums[i] + nums[j] + nums[start] + nums[end];
+                    long sum = (long) nums[i] + nums[j] + nums[left] + nums[right];
 
                     if(sum > target){
-                        end--;
+                        right--;
                     }
-                    else if(sum < target){
-                        start++;
-                    }
-                    else{
-                        ans.add(Arrays.asList(nums[i],nums[j], nums[start], nums[end]));
-                        start++;
-                        end--;
+                    else if (sum < target){
+                        left ++;
+                    }else{
 
-                        while(start< end && nums[start] == nums[start-1]) start++;
-                        while(start< end && nums[end]== nums[end+1]) end--;
+                        ans.add(List.of(nums[i], nums[j], nums[left], nums[right]));
+                        left++;
+                        right--;
+
+                        while( left < right && nums[left] == nums[left-1]) left++;
+                        while( left < right && nums[right] == nums[right + 1])right--;
 
                     }
 
                 }
-            }
 
+
+            }
         }
 
-
-        return ans;
-
+        return new ArrayList<>(ans);
 
     }
 }
